@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	font-family: 'PetraSansRegular', 'Meiryo UI'; 
+  font-weight: normal; 
+  font-style: normal; 
+	background-color: white;
+}
+/* Styling for --- */
+
+p {
+	font-size: 1.3rem;
+}
+
+span {
+	color: red;
+}
+
+/* Styling for Navbar */
+.nav-wrapper {
+	padding-right: 20px;
+	padding-left: 20px
+}
+
+.nav-link-big {
+	font-size: 1.5rem;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+/* Styling for Banner */
+.parallax-container {
+	height: 200px
+}
+/* Styling for Featured */
+.featured-carousel {
+	max-height: 250px
+}
+
+.slick-prev:before, .slick-next:before {
+	color: red;
+}
+
+.carousel-item {
+	opacity: 1 !important;
+	z-index: 1;
+}
+
+.close-text {
+	font-size: 1.3rem
+}
