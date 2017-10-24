@@ -45,7 +45,7 @@ class Events extends Component{
 						</div>
 					</div>
 					<div className="col s4">
-						<img src={ data.img } alt="event promo" />
+						<img className="main-page-image" src={ data.img } alt="event promo" />
 						<div className="close-text">{ data.price }</div>
 						<div className="close-text"><i className="material-icons left">star_rate</i>12件のレビュー</div>
 					</div>
