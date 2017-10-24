@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom' //can use HashRouter if running into trouble on builds
+import { HashRouter as Router } from 'react-router-dom' //can use HashRouter if running into trouble on builds
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
 
