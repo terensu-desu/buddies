@@ -11,8 +11,8 @@ p {
 	font-size: 1.3rem;
 }
 
-span {
-	color: red;
+span, .brand-logo, .accent-text {
+	color: #ef6c00 !important;
 }
 
 /* Styling for Navbar */
@@ -27,6 +27,11 @@ span {
 	padding-left: 30px;
 }
 
+.brand-sublogo {
+	padding-left: 130px;
+	cursor: default;
+}
+
 /* Styling for Banner */
 .parallax-container {
 	height: 200px
@@ -37,7 +42,12 @@ span {
 }
 
 .slick-prev:before, .slick-next:before {
-	color: red;
+	color: #ef6c00;
+}
+
+.carsoul-thumb-img {
+	width: 230px;
+	height: 170px;
 }
 
 .carousel-item {
@@ -47,4 +57,16 @@ span {
 
 .close-text {
 	font-size: 1.3rem
+}
+
+/* Styling for Events & Supporter */
+.main-page-image {
+	width: 350px;
+	height: 550px;
+}
+
+.thumbnail {
+	width: 60px;
+	height: 75px;
+	margin-right: 10px
 }
