@@ -7,7 +7,7 @@ class Banner extends Component{
 				<div className="section">
 					<div className="container center white-text">
 						<h2>Vitamin</h2>
-						<h4>海外で頑張る人の心のビタミンになろう！</h4>
+						<h4>心と生活のサプリメント</h4>
 					</div>
 				</div>
 				<div className="parallax">
