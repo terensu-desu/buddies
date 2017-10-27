@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 
-class Events extends Component{
+class Life extends Component{
 	render() {
-		const id = this.props.id - 1
-		const data = this.props.data[id]
+		const data = this.props.data
 		return (
 			<div className="row">
 				<div className="col s12">
@@ -17,7 +16,7 @@ class Events extends Component{
 								<div className="close-text">ホストは<span>{ data.host }</span>さん</div>
 							</div>
 							<div className="col s4">
-								<img className="circle responsive-img host-circle-pic" src="https://via.placeholder.com/150x150"/>
+								<img className="circle responsive-img host-circle-pic" src="https://via.placeholder.com/150x150" alt="host account circle-pic"/>
 							</div>
 						</div>
 						<br/>
@@ -56,7 +55,7 @@ class Events extends Component{
 						</div>
 					</div>
 					<div className="col s4">
-						<img className="responsive-img" src={ data.img } alt="event promo" />
+						<img className="responsive-img" src={ data.main_img } alt="event promo" />
 						<div className="row no-margin-bot">
 							<div className="col s6">
 								<div className="close-text">{ data.price }</div>
@@ -88,4 +87,4 @@ class Events extends Component{
 	}
 }
 
-export default Events
+export default Life
