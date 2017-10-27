@@ -6,8 +6,9 @@ class Navbar extends Component{
 		return (
 			<nav>
 				<div className="nav-wrapper white accent-text">
-					<Link to="/" className="brand-logo accent-text">Vitamin</Link>
-					<a className="brand-sublogo accent-text">みんながみんなの心のサプリメント！</a>
+					<Link to="/" className="brand-logo accent-text"><img className="vit-logo" src="https://i.imgur.com/zh52eL6.png" alt="logo"/></Link>
+					<a className="brand-sublogo accent-text hide-on-med-and-down">みんながみんなの心のサプリメント！</a>
+					<a className="dev-preview accent-text hide-on-med-and-down">Early Development Preview</a>
 					<a href="#!" data-activates="sidebar-nav" className="button-collapse accent-text"><i className="material-icons">menu</i></a>
 					<ul id="nav-mobile" className="right hide-on-med-and-down">
 						<li><a className="nav-link-big accent-text">心</a></li>
