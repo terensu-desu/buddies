@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 
 class Supporter extends Component{
 	render() {
-		const id = this.props.id - 1
-		const data = this.props.data[id]
+		const data = this.props.data
 		return (
 			<div className="row">
 				<div className="col s12">
@@ -30,7 +29,7 @@ class Supporter extends Component{
 									サポーターのオープンタイム
 								</div>
 								<div className="close-text">
-									{ data.open_time }
+									{ data.time }
 								</div>
 								<hr/>
 								<div className="close-text">
@@ -44,7 +43,7 @@ class Supporter extends Component{
 						</div>
 					</div>
 					<div className="col s4">
-						<img className="responsive-img" src={ data.img } alt="event promo"/>
+						<img className="responsive-img" src={ data.main_img } alt="event promo"/>
 						<div className="row no-margin-bot">
 							<div className="col s6">
 								<div className="close-text">
