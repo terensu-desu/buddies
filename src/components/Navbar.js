@@ -13,7 +13,7 @@ class Navbar extends Component{
 						<li><a className="nav-link-big accent-text">心</a></li>
 						<li><a className="nav-link-big accent-text">生活</a></li>
 						<li><a className="nav-link-big  accent-text">イベント</a></li>
-						<li><a className="nav-link-big last-big dropdown-button accent-text" href="#!" data-activates="category-dropdown1" data-constrainwidth="false" data-beloworigin="true">カテゴリー</a></li>
+						<li><a className="nav-link-big last-big dropdown-button accent-text" href="#!" data-activates="category-dropdown1" data-beloworigin="true">カテゴリー<i className="material-icons right">arrow_drop_down</i></a></li>
 						<li><a className="accent-text" href="#!">About</a></li>
 						<li><a className="accent-text" href="#!">Member</a></li>
 						<li><a className="accent-text" href="#!">Contact</a></li>
@@ -23,7 +23,7 @@ class Navbar extends Component{
 						<li><a className="accent-text" href="#!">心</a></li>
 						<li><a className="accent-text" href="#!">生活</a></li>
 						<li><a className="accent-text" href="#!">イベント</a></li>
-						<li><a className="dropdown-button accent-text" href="#!" data-activates="category-dropdown2" data-beloworigin="true">カテゴリー</a></li>
+						<li><a className="dropdown-button accent-text" href="#!" data-activates="category-dropdown2" data-beloworigin="true">カテゴリー<i className="material-icons right">arrow_drop_down</i></a></li>
 						<li><a className="accent-text" href="#!">About</a></li>
 						<li><a className="accent-text" href="#!">Member</a></li>
 						<li><a className="accent-text" href="#!">Contact</a></li>
