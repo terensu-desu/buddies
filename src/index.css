@@ -67,6 +67,10 @@ span, .brand-logo, .accent-text {
 	font-size: 1rem;
 }
 
+.side-nav-icon {
+	margin-left: 45%
+}
+
 /* Styling for Banner */
 /* banner patterned img from patterncooler.com */
 .banner {
@@ -120,9 +124,18 @@ span, .brand-logo, .accent-text {
 	height: 85px;
 }
 
+#main-image {
+	width: 412px
+}
+
+.page-main-img {
+	max-height: 600px;
+	max-width: 412px;
+}
+
 .area-map {
 	width: 100%;
-  height: 450px;
+  height: 350px;
   border: 0;
   frameBorder: 0
 }
@@ -139,7 +152,7 @@ span, .brand-logo, .accent-text {
 }
 
 .reviews-text {
-	font-size: .9rem;
+	font-size: 1.6rem;
 }
 
 /* Styling for Star Ratings - original Author: Zach Reed on Codepen.io (https://codepen.io/Bluetidepro/pen/GkpEa)*/
@@ -148,12 +161,25 @@ span, .brand-logo, .accent-text {
   color: #c5c5c5;
   font-size: 25px;
   height: 25px;
-  width: 115px;
+  width: 120px;
   margin: 0 auto;
   position: relative;
   padding: 0;
   text-shadow: 0px 1px 0 #a2a2a2;
 }
+
+.star-ratings-featured-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 15px;
+  height: 25px;
+  width: 120px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 #a2a2a2;
+}
+
 
 .star-ratings-css-top {
 	color: #e7711b;
