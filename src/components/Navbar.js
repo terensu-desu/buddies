@@ -13,22 +13,57 @@ class Navbar extends Component{
 						<li><a className="nav-link-big accent-text">心</a></li>
 						<li><a className="nav-link-big accent-text">生活</a></li>
 						<li><a className="nav-link-big  accent-text">イベント</a></li>
-						<li><a className="nav-link-big last-big dropdown-button accent-text" href="#!" data-activates="category-dropdown1" data-constrainWidth="false" data-beloworigin="true">カテゴリー</a></li>
+						<li><a className="nav-link-big last-big dropdown-button accent-text" href="#!" data-activates="category-dropdown1" data-constrainwidth="false" data-beloworigin="true">カテゴリー</a></li>
 						<li><a className="accent-text" href="#!">About</a></li>
 						<li><a className="accent-text" href="#!">Member</a></li>
 						<li><a className="accent-text" href="#!">Contact</a></li>
 						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown1" data-beloworigin="true"><i className="material-icons right">language</i></a></li>
 					</ul>
-					<ul className="side-nav" id="sidebar-nav">
+					<ul className="side-nav center" id="sidebar-nav">
 						<li><a className="accent-text" href="#!">心</a></li>
 						<li><a className="accent-text" href="#!">生活</a></li>
 						<li><a className="accent-text" href="#!">イベント</a></li>
+						<li><a className="dropdown-button accent-text" href="#!" data-activates="category-dropdown2" data-beloworigin="true">カテゴリー</a></li>
 						<li><a className="accent-text" href="#!">About</a></li>
 						<li><a className="accent-text" href="#!">Member</a></li>
 						<li><a className="accent-text" href="#!">Contact</a></li>
-						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown2" data-beloworigin="true"><i className="material-icons left">language</i></a></li>
+						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown2" data-beloworigin="true"><span><i className="side-nav-icon material-icons left">language</i></span></a></li>
 					</ul>
 					<ul id="category-dropdown1" className="dropdown-content">
+						<li><p className="category-header center">すべてお手伝いメンター</p></li>
+						<li className="divider"></li>
+						<li><a className="accent-text center" href="#!">交通</a></li>
+						<li><a className="accent-text center" href="#!">市役所</a></li>
+						<li><a className="accent-text center" href="#!">学校</a></li>
+						<li><a className="accent-text center" href="#!">病院</a></li>
+						<li><a className="accent-text center" href="#!">銀行・金融</a></li>
+						<li><a className="accent-text center" href="#!">子ども</a></li>
+						<li><a className="accent-text center" href="#!">趣味</a></li>
+						<li><a className="accent-text center" href="#!">生活相談</a></li>
+						<li><a className="accent-text center" href="#!">料理</a></li>
+						<li><a className="accent-text center" href="#!">食事</a></li>
+						<li><a className="accent-text center" href="#!">美容・ファッション</a></li>
+						<li><a className="accent-text center" href="#!">その他</a></li>
+						<li className="divider"></li>
+						<li><p className="category-header center">心のメンター</p></li>
+						<li className="divider"></li>
+						<li><a className="accent-text center" href="#!">生活</a></li>
+						<li><a className="accent-text center" href="#!">文化</a></li>
+						<li><a className="accent-text center" href="#!">学業</a></li>
+						<li><a className="accent-text center" href="#!">お金</a></li>
+						<li><a className="accent-text center" href="#!">子育て</a></li>
+						<li><a className="accent-text center" href="#!">健康</a></li>
+						<li><a className="accent-text center" href="#!">職場</a></li>
+						<li><a className="accent-text center" href="#!">睡眠</a></li>
+						<li><a className="accent-text center" href="#!">その他</a></li>
+						<li className="divider"></li>
+						<li><p className="category-header center">イベント</p></li>
+						<li className="divider"></li>
+						<li><a className="accent-text center" href="#!">ホームパーティ</a></li>
+						<li><a className="accent-text center" href="#!">居酒屋・バー</a></li>
+						<li><a className="accent-text center" href="#!">その他</a></li>
+					</ul>
+					<ul id="category-dropdown2" className="dropdown-content">
 						<li><p className="category-header center">すべてお手伝いメンター</p></li>
 						<li className="divider"></li>
 						<li><a className="accent-text center" href="#!">交通</a></li>
