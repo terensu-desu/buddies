@@ -10,56 +10,50 @@ class Supporter extends Component{
 						<h4 className="no-margin-top"><span>{ data.supporter }</span>さん</h4>
 						<div className="row no-margin-bot">
 							<div className="col s12">
-								<div className="close-text">{ data.supporter_intro }</div>
+								<div className="close-text display-linebreak">{ data.supporter_intro }</div>
 							</div>
 						</div>
 						<hr/>
 						<div className="row no-margin-bot">
 							<div className="col s12">
-								<div className="close-text"><i className="material-icons left">person</i>{ data.status ? "Online!" : "Offline" }</div>
+								<div className="close-text"><i className="material-icons left">person</i>{ data.status ? "オンライン!" : "オフライン" }</div>
 								<div className="close-text"><i className="material-icons left">language</i>ガイドの言語：{ data.languages }</div>
 								<div className="close-text"><i className="material-icons left">build</i>{ data.experience }</div>
 								<div className="close-text"><i className="material-icons left">school</i>{ data.skills }</div>
+								<div className="close-text"><i className="material-icons left">my_location</i>場所: { data.area }</div>
+								<div className="star-ratings-css left">
+								  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+								  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+								</div>
+								<p className="reviews-text">12件のレビュー</p>
+								<a className="btn appointment-btn orange darken-3">予定を予約する!</a>
 							</div>
 						</div>
 						<hr/>
-						<div className="row">
+						<div className="row no-margin-bot">
 							<div className="col s12">
 								<div className="close-text">
-									サポーターのオープンタイム
+									<span>サポーターのオープンタイム</span>
 								</div>
 								<div className="close-text">
 									{ data.time }
 								</div>
 								<hr/>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col s12">
 								<div className="close-text">
-									エリア:
+									<span>サポーターのプロフィール</span>
 								</div>
-								<div className="close-text">
-									The next event will be held on 10/31/2017 and be available for all.
-									<iframe className="area-map" title="map" src="https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I" allowFullScreen></iframe>
+								<div className="display-linebreak close-text">
+									{ data.pic_profile }
 								</div>
 							</div>
 						</div>
 					</div>
 					<div className="col s4">
 						<img className="responsive-img" src={ data.main_img } alt="event promo"/>
-						<div className="row no-margin-bot">
-							<div className="col s6">
-								<div className="close-text">
-									<div className="star-ratings-css left">
-									  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-									  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-									</div>
-									<p className="reviews-text">12件のレビュー</p>
-								</div>
-							</div>
-							<div className="col s6">
-								<div className="center close-text">
-									<a className="btn appointment-btn orange darken-3">Appointment!</a>
-								</div>
-							</div>
-						</div>
 						<div className="row no-margin-bot">
 							<div className="col s12">
 								<div className="center thumbnail-container close-text">
