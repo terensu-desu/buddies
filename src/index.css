@@ -6,7 +6,7 @@ body {
 	background-color: white;
 }
 
-/* Styling for --- */
+/* Styling for general */
 a {
 	color: black;
 }
@@ -17,6 +17,10 @@ p {
 
 span, .brand-logo, .accent-text {
 	color: #ef6c00 !important;
+}
+
+.display-linebreak {
+  white-space: pre-line;
 }
 
 .vit-accent {
@@ -58,10 +62,9 @@ span, .brand-logo, .accent-text {
 	cursor: default;
 }
 
-.dev-preview {
+.category-header {
 	font-weight: 700;
-	padding-left: 520px;
-	cursor: default;	
+	font-size: 1rem;
 }
 
 /* Styling for Banner */
@@ -111,10 +114,6 @@ span, .brand-logo, .accent-text {
 }
 
 /* Styling for Events & Supporter */
-.appointment-btn {
-	width: 100%;
-}
-
 .host-circle-pic {
 	float: right;
 	width: 85px;
@@ -147,9 +146,9 @@ span, .brand-logo, .accent-text {
 .star-ratings-css {
   unicode-bidi: bidi-override;
   color: #c5c5c5;
-  font-size: 15px;
+  font-size: 25px;
   height: 25px;
-  width: 100px;
+  width: 115px;
   margin: 0 auto;
   position: relative;
   padding: 0;
