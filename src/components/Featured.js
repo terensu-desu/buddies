@@ -24,7 +24,7 @@ class Featured extends Component{
 						</div>
 						<div className="row featured-row">
 							<div className="col s12">
-								<div className="star-ratings-css left">
+								<div className="star-ratings-featured-css left">
 								  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 								  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 								</div>
@@ -63,7 +63,7 @@ class Featured extends Component{
 						</div>
 						<div className="row featured-row">
 							<div className="col s12">
-								<div className="star-ratings-css left">
+								<div className="star-ratings-featured-css left">
 								  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 								  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 								</div>
@@ -99,7 +99,7 @@ class Featured extends Component{
 						</div>
 						<div className="row featured-row">
 							<div className="col s12">
-								<div className="star-ratings-css left">
+								<div className="star-ratings-featured-css left">
 								  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 								  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 								</div>
