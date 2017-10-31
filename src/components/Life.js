@@ -18,7 +18,7 @@ class Life extends Component{
 										<div className="close-text"><h5>ホストは<span>{ data.host }</span>さん</h5></div>
 									</div>
 									<div className="col s4">
-										<img className="circle responsive-img host-circle-pic" src="https://via.placeholder.com/150x150" alt="host account circle-pic"/>
+										<img className="circle responsive-img host-circle-pic" src="https://placeimg.com/150/150/people?t=1509455627104" alt="host account circle-pic"/>
 									</div>
 								</div>
 								<br/>
