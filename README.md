@@ -1,3 +1,28 @@
+## Notes for the overall project
+Goal to have the demo version of the site finished by 11/28
+Launch on site on domain by 12/1!
+
+Start running the website by December 1st
+  - Log in and register. OAuth2.
+  - Category on the side of carousel.
+  - Restructuring pages. 
+  - Search bar. Change banner. Shorten banner.
+  - Move special links above carousels which lead to browse page.
+  - Browse page, have filter buttons (include gender option)
+  - Demo version of an event, the sign up process, etc.
+  - Domain provider (1 domain name or 3). I think a .com would be a good start to save money.
+  - Set up language filter to use local browser storage to save language preference.
+  - Security
+    - How to get ID verification. Do some research. Airbnb does by Facebook profile, phone number, email address, or government ID.
+    - Verisign or paypal for payments. Webmoney is a familiar Japanese middle man.
+
+Wants 100 customers by the end of the year.
+  - Reach out to friends and people about hopping on and trying out the service.
+  - Reach out to social media and blogs.
+  - QR code creation with a link to site.
+
+## Creat React App stuff below
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
