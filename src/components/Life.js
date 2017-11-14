@@ -68,7 +68,7 @@ class Life extends Component{
 									</div>									
 								</div>
 								<div className="row no-margin-bot">
-								<div className="col s12 center">
+									<div className="col s12 center">
 										<a href="#!"><i className="vit-accent social-icons fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
 										<a href="#!"><i className="vit-accent social-icons fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
 										<a href="#!"><i className="vit-accent social-icons fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
