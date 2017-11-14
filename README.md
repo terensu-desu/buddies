@@ -3,15 +3,21 @@ Goal to have the demo version of the site finished by 11/28
 Launch on site on domain by 12/1!
 
 Start running the website by December 1st
-  - Log in and register. OAuth2.
-  - Category on the side of carousel.
-  - Restructuring pages. 
-  - Search bar. Change banner. Shorten banner.
-  - Move special links above carousels which lead to browse page.
-  - Browse page, have filter buttons (include gender option)
-  - Demo version of an event, the sign up process, etc.
+  - Log in and register. OAuth2. - High
+  - Clean up individual pages structure. - High
+
+  - Search bar. Change banner. Shorten banner -> Complete
+  - Move special links above carousels which lead to browse page -> Complete
+
+  - Browse page, have filter buttons (include gender option) - High
+
+  - Set up language filter to use local browser storage to save language preference. - Medium; requires language packs ready
+  - Category on the side of carousel. - Medium
+  - Restructure pages into smaller density (2 files?). - Low
+  - Demo version of an event, the sign up process, etc. - Low
+
   - Domain provider (1 domain name or 3). I think a .com would be a good start to save money.
-  - Set up language filter to use local browser storage to save language preference.
+  
   - Security
     - How to get ID verification. Do some research. Airbnb does by Facebook profile, phone number, email address, or government ID.
     - Verisign or paypal for payments. Webmoney is a familiar Japanese middle man.
