@@ -7,16 +7,13 @@ class Navbar extends Component{
 			<nav>
 				<div className="nav-wrapper white accent-text">
 					<Link to="/" className="brand-logo accent-text"><img className="vit-logo" src="https://i.imgur.com/zh52eL6.png" alt="logo"/></Link>
-					<a className="brand-sublogo accent-text hide-on-med-and-down">みんながみんなの心のサプリメント！</a>
+					<a className="brand-sublogo accent-text hide-on-med-and-down"><span className="brand-name">Buddies</span>     みんながみんなの心のサプリメント！</a>
 					<a href="#!" data-activates="sidebar-nav" className="button-collapse accent-text"><i className="material-icons">menu</i></a>
 					<ul id="nav-mobile" className="right hide-on-med-and-down show-on-large">
-						<li><a className="nav-link-big accent-text">心</a></li>
-						<li><a className="nav-link-big accent-text">生活</a></li>
-						<li><a className="nav-link-big  accent-text">イベント</a></li>
 						<li><a className="nav-link-big last-big dropdown-button accent-text" href="#!" data-activates="category-dropdown1" data-beloworigin="true">カテゴリー<i className="material-icons right">arrow_drop_down</i></a></li>
 						<li><a className="accent-text" href="#!">About</a></li>
-						<li><a className="accent-text" href="#!">Member</a></li>
-						<li><a className="accent-text" href="#!">Contact</a></li>
+						<li><a className="accent-text" href="#!">Log In</a></li>
+						<li><a className="accent-text" href="#!">Sign Up</a></li>
 						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown1" data-beloworigin="true"><i className="material-icons right">language</i></a></li>
 					</ul>
 					<ul className="side-nav center" id="sidebar-nav">
@@ -25,8 +22,8 @@ class Navbar extends Component{
 						<li><a className="accent-text" href="#!">イベント</a></li>
 						<li><a className="dropdown-button accent-text" href="#!" data-activates="category-dropdown2" data-beloworigin="true">カテゴリー<i className="material-icons right">arrow_drop_down</i></a></li>
 						<li><a className="accent-text" href="#!">About</a></li>
-						<li><a className="accent-text" href="#!">Member</a></li>
-						<li><a className="accent-text" href="#!">Contact</a></li>
+						<li><a className="accent-text" href="#!">Log In</a></li>
+						<li><a className="accent-text" href="#!">Sign Up</a></li>
 						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown2" data-beloworigin="true"><span><i className="side-nav-icon material-icons left">language</i></span></a></li>
 					</ul>
 					<ul id="category-dropdown1" className="dropdown-content">
