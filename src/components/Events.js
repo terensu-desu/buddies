@@ -26,7 +26,7 @@ class Events extends Component{
 									<div className="col s12">
 										<div className="close-text"><i className="material-icons left">date_range</i>次の日: { data.date }</div>
 										<div className="close-text"><i className="material-icons left">access_time</i>予定時刻: { data.time }</div>
-												<div className="close-text"><i className="material-icons left">attach_money</i>価格: { data.price }</div>
+										<div className="close-text"><i className="material-icons left">attach_money</i>価格: { data.price }</div>
 										<div className="close-text"><i className="material-icons left">note</i>持ち物: { data.memo }</div>
 										<div className="close-text"><i className="material-icons left">nature_people</i>集合場所: { data.meeting }</div>
 										<div className="close-text"><i className="material-icons left">language</i>ガイドの言語：{ data.languages }</div>
@@ -79,7 +79,7 @@ class Events extends Component{
 							</div>
 						</div>
 						<div id="main-image" className="card-image">
-							<img className="main-page-image responsive-img" src={ data.main_img } alt="event promo" />
+							<img className="page-main-img responsive-img" src={ data.main_img } alt="event promo" />
 							<br/><br/><br/>
 							<div className="close-text">
 								<h5 className="center"><span>イベント</span>の場所</h5>
