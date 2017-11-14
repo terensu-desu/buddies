@@ -11,10 +11,6 @@ a {
 	color: black;
 }
 
-p {
-	font-size: 1.3rem;
-}
-
 span, .brand-logo, .accent-text {
 	color: #ef6c00 !important;
 }
@@ -46,6 +42,7 @@ span, .brand-logo, .accent-text {
 }
 
 .nav-link-big {
+	margin-right: 5px;
 	font-size: 1.5rem;
 	padding-right: 30px;
 	padding-left: 30px;
@@ -57,9 +54,14 @@ span, .brand-logo, .accent-text {
 	width: 50px
 }
 
+.brand-name {
+	font-size: 1.5rem;
+}
+
 .brand-sublogo {
 	padding-left: 70px;
 	cursor: default;
+	white-space: pre;
 }
 
 .category-header {
@@ -71,11 +73,11 @@ span, .brand-logo, .accent-text {
 	margin-left: 45%
 }
 
-/* Styling for Banner */
+/* Styling for Banner -- NOW OUTDATED -- */
 /* banner patterned img from patterncooler.com */
 .banner {
 	background: url(https://i.imgur.com/qVu8peB.png);
-	height: 300px
+	height: 240px
 }
 
 .banner-title, .banner-subtitle {
@@ -92,8 +94,23 @@ span, .brand-logo, .accent-text {
 	margin-bottom: 0 !important;
 }
 
+.featured-title {
+	font-size: 1.4rem !important;
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
 .featured-carousel {
 	max-height: 250px
+}
+
+.cat-circle {
+	margin-top: 5px;
+	padding: 5px 10px 5px 10px;
+	background-color: white;
+	border: 1px solid #ef6c00;
+	border-radius: 15px;
+	display: inline-block;
 }
 
 .featured-btn {
