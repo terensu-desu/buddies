@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="container-fluid">
+        <div>
           <Navbar />
           <Main />
         </div>
