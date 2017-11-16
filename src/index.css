@@ -35,6 +35,10 @@ span, .brand-logo, .accent-text {
 	margin-bottom: 0 !important
 }
 
+.card-round {
+	border-radius: 15px !important
+}
+
 /* Styling for Navbar */
 .nav-wrapper {
 	padding-right: 30px;
@@ -88,6 +92,8 @@ span, .brand-logo, .accent-text {
 .banner-subtitle {
 	margin-left: 5%
 }
+
+
 /* Styling for Featured */
 .featured-row {
 	margin-top: 0 !important;
