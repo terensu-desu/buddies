@@ -7,21 +7,21 @@ class Featured extends Component{
 		const dataMap = data.map((item, i) => {
 			return (
 				<div className="carsoul-container" key={i}>
-					<Link to={ item.url }>
+					<Link to={item.url}>
 						<div className="row featured-row">
 							<div className="col s12">
-								<img className="carsoul-thumb-img responsive-img" src={ item.img } alt="carousel preview" />
+								<img className="carsoul-thumb-img responsive-img" src={item.img} alt="carousel preview" />
 							</div>
 						</div>
 						<div className="row featured-row">
-							<div className="col s12">{ item.title }</div>
+							<div className="col s12">{item.title}</div>
 						</div>
 						<div className="row featured-row">
 							<div className="col s6">
-								<div className="left">{ item.host }</div>
+								<div className="left">{item.host}</div>
 							</div>
 							<div className="col s6">
-								<span className="right">{ item.date }</span>
+								<span className="right">{item.date}</span>
 							</div>
 						</div>
 						<div className="row featured-row">
@@ -32,7 +32,7 @@ class Featured extends Component{
 								</div>
 							</div>
 							<div className="col s6">
-								<span className="right">{ item.price }</span>
+								<span className="right">{item.price}</span>
 							</div>
 						</div>
 					</Link>
@@ -48,33 +48,31 @@ class Featured extends Component{
 		const dataMap = data.map((item, i) => {
 			return (
 				<div className="col s6">
-					<div className="card" key={i}>
+					<div className="card card-round" key={i}>
 						<Link to={item.url}>
-							<div className="card">
-								<div className="card-image">
-									<img src={item.img} alt="featured preview" />
-									<div className="close-text card-title featured-title">{item.title}</div>
-								</div>
-								<div className="card-content">
-									<div className="row featured-row">
-										<div className="col s12 m8">
-											<p>{item.host}</p>
-										</div>
-										<div className="col s12 m4">
-											<div className="star-ratings-featured-css">
-											  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-											  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-											</div>
+							<div className="card-image">
+								<img className="card-image-round" src={item.img} alt="featured preview" />
+								<div className="close-text card-title featured-title">{item.title}</div>
+							</div>
+							<div className="card-content">
+								<div className="row featured-row">
+									<div className="col s12 m8">
+										<p>{item.host}</p>
+									</div>
+									<div className="col s12 m4">
+										<div className="star-ratings-featured-css">
+										  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+										  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 										</div>
 									</div>
-									<div className="row featured-row">
-										<div className="col s12 m6">
-											<p>{item.date}</p>
-										</div>
-										<div className="col s12 m6">
-											<p className="right hide-on-small-only">{item.price}</p>
-											<p className="hide-on-med-and-up show-on-small">{item.price}</p>
-										</div>
+								</div>
+								<div className="row featured-row">
+									<div className="col s12 m6">
+										<p>{item.date}</p>
+									</div>
+									<div className="col s12 m6">
+										<p className="right hide-on-small-only">{item.price}</p>
+										<p className="hide-on-med-and-up show-on-small">{item.price}</p>
 									</div>
 								</div>
 							</div>
@@ -91,33 +89,31 @@ class Featured extends Component{
 		const dataMap = data.map((item, i) => {
 			return (
 				<div className="col s6">
-					<div className="card" key={i}>
+					<div className="card card-round" key={i}>
 						<Link to={item.url}>
-							<div className="card">
-								<div className="card-image">
-									<img src={item.img} alt="featured preview" />
-									<div className="close-text card-title featured-title">{item.supporter}</div>
-								</div>
-								<div className="card-content">
-									<div className="row featured-row">
-										<div className="col s12 m8">
-											<p>{item.experience}</p>
-										</div>
-										<div className="col s12 m4">
-											<div className="star-ratings-featured-css">
-											  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-											  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-											</div>
+							<div className="card-image">
+								<img className="card-image-round" src={item.img} alt="featured preview" />
+								<div className="close-text card-title featured-title">{item.supporter}</div>
+							</div>
+							<div className="card-content">
+								<div className="row featured-row">
+									<div className="col s12 m8">
+										<p>{item.experience}</p>
+									</div>
+									<div className="col s12 m4">
+										<div className="star-ratings-featured-css">
+										  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+										  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 										</div>
 									</div>
-									<div className="row featured-row">
-										<div className="col s12 m6">
-											<p>{item.time}</p>
-										</div>
-										<div className="col s12 m6">
-											<p className="right hide-on-small-only">{item.price}</p>
-											<p className="hide-on-med-and-up show-on-small">{item.price}</p>
-										</div>
+								</div>
+								<div className="row featured-row">
+									<div className="col s12 m6">
+										<p>{item.time}</p>
+									</div>
+									<div className="col s12 m6">
+										<p className="right hide-on-small-only">{item.price}</p>
+										<p className="hide-on-med-and-up show-on-small">{item.price}</p>
 									</div>
 								</div>
 							</div>
@@ -221,11 +217,12 @@ class Featured extends Component{
 							<div className="card-panel card-round">
 									<div className="row no-margin-top">
 										<div className="col s12">
-											<h4 className="no-margin-bot">みんなのリクエスト <a href="#!" className="right btn orange darken-3">もっと</a></h4>
+											<h4 className="no-margin-bot">みんなのリクエスト</h4>
 										</div>
 									</div>
 									<div className="row no-margin-bot">
-										{ this.handleLifeDataV() }
+										{this.handleLifeDataV()}
+										<a href="#!" className="right btn orange darken-3">もっと</a>
 									</div>
 							</div>
 						</div>
@@ -233,11 +230,12 @@ class Featured extends Component{
 							<div className="card-panel card-round">
 								<div className="row no-margin-top">
 									<div className="col s12">
-										<h4 className="no-margin-bot">みんなのサポート <a href="#!" className="right btn orange darken-3">もっと</a></h4>
+										<h4 className="no-margin-bot">みんなのサポート</h4>
 									</div>
 								</div>
 								<div className="row no-margin-bot">
-									{ this.handleSupporterDataV() }
+									{this.handleSupporterDataV()}
+									<a href="#!" className="right btn orange darken-3">もっと</a>
 								</div>
 							</div>
 						</div>
