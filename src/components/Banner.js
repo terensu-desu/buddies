@@ -13,7 +13,7 @@ class Banner extends Component{
 										<i className="material-icons prefix"></i>
 										<input type="search" id="searchBar" className="autocomplete" />
 										<label htmlFor="searchBar">Search Buddies</label>
-										<a className="btn-large orange darken-3 right">Search!</a>
+										<a className="btn orange darken-3 right">Search!</a>
 									</div>
 								</div>
 							</div>
