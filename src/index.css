@@ -39,6 +39,10 @@ span, .brand-logo, .accent-text {
 	border-radius: 15px !important
 }
 
+.card-image-round {
+	border-radius: 15px 15px 0 0 !important
+}
+
 /* Styling for Navbar */
 .nav-wrapper {
 	padding-right: 30px;
@@ -54,6 +58,7 @@ span, .brand-logo, .accent-text {
 
 .vit-logo {
 	margin-top: 7px;
+	margin-bottom: 3px !important;
 	height: 50px;
 	width: 50px
 }
