@@ -47,8 +47,8 @@ class Featured extends Component{
 		const data = this.props.lifeData.slice(0,4)
 		const dataMap = data.map((item, i) => {
 			return (
-				<div className="col s6">
-					<div className="card card-round" key={i}>
+				<div className="col s6" key={i}>
+					<div className="card card-round hoverable">
 						<Link to={item.url}>
 							<div className="card-image">
 								<img className="card-image-round" src={item.img} alt="featured preview" />
@@ -88,8 +88,8 @@ class Featured extends Component{
 		const data = this.props.supporterData.slice(0,4)
 		const dataMap = data.map((item, i) => {
 			return (
-				<div className="col s6">
-					<div className="card card-round" key={i}>
+				<div className="col s6" key={i}>
+					<div className="card card-round hoverable">
 						<Link to={item.url}>
 							<div className="card-image">
 								<img className="card-image-round" src={item.img} alt="featured preview" />
