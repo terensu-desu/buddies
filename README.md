@@ -2,30 +2,34 @@
 Goal to have the demo version of the site finished by 11/28
 Launch on site on domain by 12/1!
 
-Start running the website by December 1st
-  - Log in and register. OAuth2. - High
-  - Clean up individual pages structure. - High
-
-  - Search bar. Change banner. Shorten banner -> Complete
-  - Move special links above carousels which lead to browse page -> Complete
-
-  - Browse page, have filter buttons (include gender option) - High
-
-  - Set up language filter to use local browser storage to save language preference. - Medium; requires language packs ready
-  - Category on the side of carousel. - Medium
-  - Restructure pages into smaller density (2 files?). - Low
-  - Demo version of an event, the sign up process, etc. - Low
-
-  - Domain provider (1 domain name or 3). I think a .com would be a good start to save money.
-  
-  - Security
-    - How to get ID verification. Do some research. Airbnb does by Facebook profile, phone number, email address, or government ID.
-    - Verisign or paypal for payments. Webmoney is a familiar Japanese middle man.
-
+Start running the website by December 1st!
 Wants 100 customers by the end of the year.
   - Reach out to friends and people about hopping on and trying out the service.
   - Reach out to social media and blogs.
   - QR code creation with a link to site.
+
+## Priorities
+- Login and register. OAuth2. - High
+  - 11/19, added functionality for logins using Okta account info
+  - Next will try to get OAuth2 social logins working
+  - Also validate tokens to show secure data
+
+- Clean up individual pages structure. - High
+- Browse page, have filter buttons (include gender option) - High
+- Set up language filter to use local browser storage to save language preference. - Medium; requires language packs ready
+- Restructure pages into smaller density (2 files?). - Low
+
+## Completion list
+  - Removed banner -> Changed to Search bar
+    - Ask for clarification and add Anqi's requests
+    - Add autocomplete when Materialize drops jQuery dependency
+  - Main page redesign from 11/13 request, using cards, larger and fewer preview items
+
+## Things to research
+  - Domain provider (1 domain name or 3). I think a .com would be a good start to save money.
+  - Security
+    - How to get ID verification for hosts. Airbnb does by Facebook profile, phone number, email address, or government ID.
+    - Payments? Verisign or paypal for payments. Webmoney is a familiar Japanese middle man.
 
 ## Creat React App stuff below
 
