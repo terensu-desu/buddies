@@ -15,6 +15,10 @@ span, .brand-logo, .accent-text {
 	color: #ef6c00 !important;
 }
 
+.hidden {
+	display: none;
+}
+
 .display-linebreak {
   white-space: pre-line;
 }
@@ -82,7 +86,7 @@ span, .brand-logo, .accent-text {
 	margin-left: 45%
 }
 
-/* Styling for Banner -- NOW OUTDATED -- */
+/* Styling for Banner -- NOW OUTDATED -- Styling for SearchBar */
 /* banner patterned img from patterncooler.com */
 .banner {
 	background: url(https://i.imgur.com/qVu8peB.png);
@@ -98,6 +102,9 @@ span, .brand-logo, .accent-text {
 	margin-left: 5%
 }
 
+.search-margin-push {
+	margin-top: 12px
+}
 
 /* Styling for Featured */
 .featured-row {
