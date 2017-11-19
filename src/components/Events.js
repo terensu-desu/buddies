@@ -69,11 +69,11 @@ class Events extends Component{
 								</div>
 								<div className="row no-margin-bot">
 									<div className="col s12 center">
-										<a href="#!"><i className="vit-accent social-icons fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-										<a href="#!"><i className="vit-accent social-icons fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-										<a href="#!"><i className="vit-accent social-icons fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
-										<a href="#!"><i className="vit-accent social-icons fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-										<a href="#!"><i className="vit-accent social-icons fa fa-heart fa-2x" aria-hidden="true"></i></a>
+										<a href="#!"><i className="vit-accent social-icons fa fa-facebook-square fa-2x" aria-hidden="true"></i><p className="hidden">Facebook</p></a>
+										<a href="#!"><i className="vit-accent social-icons fa fa-twitter-square fa-2x" aria-hidden="true"></i><p className="hidden">Twitter</p></a>
+										<a href="#!"><i className="vit-accent social-icons fa fa-google-plus-square fa-2x" aria-hidden="true"></i><p className="hidden">Google+</p></a>
+										<a href="#!"><i className="vit-accent social-icons fa fa-envelope fa-2x" aria-hidden="true"></i><p className="hidden">Email</p></a>
+										<a href="#!"><i className="vit-accent social-icons fa fa-heart fa-2x" aria-hidden="true"></i><p className="hidden">Save</p></a>
 									</div>
 								</div>
 							</div>
