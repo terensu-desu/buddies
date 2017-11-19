@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { withAuth } from '@okta/okta-react'
 
 class Navbar extends Component{
 	render() {
@@ -11,7 +12,9 @@ class Navbar extends Component{
 					<a href="#!" data-activates="sidebar-nav" className="button-collapse accent-text"><i className="material-icons">menu</i></a>
 					<ul id="nav-mobile" className="right hide-on-med-and-down show-on-large">
 						<li><a className="accent-text" href="#!">About</a></li>
-						<li><a className="accent-text" href="#!">Log In</a></li>
+						{this.props.authenticated ? 
+							<li><a className="accent-text" href="#!">Logout</a></li> : 
+							<li><Link to="/login" className="accent-text">Login</Link></li>}
 						<li><a className="accent-text" href="#!">Sign Up</a></li>
 						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown1" data-beloworigin="true"><i className="material-icons right">language</i></a></li>
 					</ul>
