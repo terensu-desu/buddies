@@ -4,7 +4,7 @@ class store extends EventEmitter {
 	constructor() {
 		super()
 		this.data = {
-			life_data: [
+			buddies_data: [
 				{
 					title: "携帯の契約に付き添います",
 					category: "Services",
@@ -12,16 +12,17 @@ class store extends EventEmitter {
 					date: "11/01/2017",
 					price: "¥2000/人",
 					img: "https://placeimg.com/300/250/any",
-					url: "/life/1",
+					url: "/buddies/1",
 					subtitle: "名古屋市内の大手3社携帯電話会社への契約のお手伝いをします。",
 					main_img: "https://placeimg.com/1000/1000/any?t=1509102675212",
+					sec_img: "https://placeimg.com/1000/1000/any?t=1509102695866",
+					thr_img: "https://placeimg.com/1000/1000/people?t=1509103025066",
 					time: "2時間",
 					memo: "身分証明書、あればご自分の銀行のキャッシュカードもお持ちください。",
 					meeting: "名古屋駅金時計前",
 					languages: "日本語、中国語、英語",
-					host_info: "名古屋市在住の二児の父親です。昭和区で旅館業許可書（簡易宿所）を取得してAirbnbを運営しています。普通自動車免許所持しています。簡単な英語、中国語でのやりとりは可能なので仕事の依頼もどうぞ。",
+					profile: "名古屋市在住の二児の父親です。昭和区で旅館業許可書（簡易宿所）を取得してAirbnbを運営しています。普通自動車免許所持しています。簡単な英語、中国語でのやりとりは可能なので仕事の依頼もどうぞ。",
 					event_info: "日本に来たばかりの方々のために、携帯電話契約のお手伝いをします。中国語、英語での通訳ができるので日本語が出来ない方にはおすすめです！価格はお一人ずつに頂く料金となっております。通常2,3名の方をグループでお連れしています。他にも付き添いのリクエストがございましたら、お気軽にご連絡ください！",
-					map_url: "https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I"
 				},
 				{
 					title: "名古屋大学周辺を案内します！",
@@ -30,7 +31,7 @@ class store extends EventEmitter {
 					date: "11/02/2017",
 					price: "¥3500/人",
 					img: "https://placeimg.com/300/250/any?t=1509023596355",
-					url: "/life/2",
+					url: "/buddies/2",
 					subtitle: "川へフで初険しごち録性ヲルオ教代初違ヲサソヘ属額サエナウ髪器ず！",
 					main_img: "https://placeimg.com/1000/1000/any?t=1509102695866",
 					time: "1時間",
@@ -39,7 +40,6 @@ class store extends EventEmitter {
 					languages: "日本語、中国語、英語",
 					host_info: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
 					event_info: "心能モホ合選ヤ不山づ西級ハケロ類野ミユ碁際ふイ中属76平ヲツヨオ芸7恩掲くばゅ水拓丸強査断ひど。点あけ作善だにまレ欺半ミモ過収ムオ開介テア島治氏れをりイ代題らっだル芸15可げ合万テタケ著生ぞうフ可秋登ょ職律泊祥クしと。",
-					map_url: "https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I"
 				},
 				{
 					title: "自転車の保険を申し込みます",
@@ -48,7 +48,7 @@ class store extends EventEmitter {
 					date: "11/03/2017",
 					price: "¥1000/人",
 					img: "https://placeimg.com/300/250/people?t=1509023130422",
-					url: "/life/3",
+					url: "/buddies/3",
 					subtitle: "川へフで初険しごち録性ヲルオ教代初違ヲサソヘ属額サエナウ髪器ず！",
 					main_img: "https://placeimg.com/1000/1000/people?t=1509103025066",
 					time: "1時間",
@@ -57,7 +57,6 @@ class store extends EventEmitter {
 					languages: "日本語、中国語、英語",
 					host_info: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
 					event_info: "心能モホ合選ヤ不山づ西級ハケロ類野ミユ碁際ふイ中属76平ヲツヨオ芸7恩掲くばゅ水拓丸強査断ひど。点あけ作善だにまレ欺半ミモ過収ムオ開介テア島治氏れをりイ代題らっだル芸15可げ合万テタケ著生ぞうフ可秋登ょ職律泊祥クしと。",
-					map_url: "https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I"
 				},
 				{
 					title: "一緒に日本のレシピーを慣れます",
@@ -66,7 +65,7 @@ class store extends EventEmitter {
 					date: "11/04/2017",
 					price: "¥4000/人",
 					img: "https://placeimg.com/300/250/any?t=1509023688995",
-					url: "/life/4",
+					url: "/buddies/4",
 					subtitle: "川へフで初険しごち録性ヲルオ教代初違ヲサソヘ属額サエナウ髪器ず！",
 					main_img: "https://placeimg.com/1000/1000/any?t=1509102846565",
 					time: "5時間",
@@ -75,82 +74,91 @@ class store extends EventEmitter {
 					languages: "日本語、中国語、英語",
 					host_info: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
 					event_info: "心能モホ合選ヤ不山づ西級ハケロ類野ミユ碁際ふイ中属76平ヲツヨオ芸7恩掲くばゅ水拓丸強査断ひど。点あけ作善だにまレ欺半ミモ過収ムオ開介テア島治氏れをりイ代題らっだル芸15可げ合万テタケ著生ぞうフ可秋登ょ職律泊祥クしと。",
-					map_url: "https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I"
 				},
+			],
+			life_data: [
 				{
-					title: "スマートフォンを申し込みましょう！",
+					title: "名古屋市内の案内お願いします！",
 					category: "Services",
-					host: "紅松史賀",
-					date: "11/05/2017",
-					price: "¥3000/人",
-					img: "https://placeimg.com/300/250/any?t=1509023796532",
-					url: "/life/5",
-					subtitle: "川へフで初険しごち録性ヲルオ教代初違ヲサソヘ属額サエナウ髪器ず！",
-					main_img: "https://placeimg.com/1000/1000/tech?t=1509102967412",
+					host: "山田嘉恒",
+					date: "11/01/2017",
+					price: "¥2000/人",
+					img: "https://placeimg.com/300/250/any",
+					url: "/life/1",
+					subtitle: "名古屋市内の大手3社携帯電話会社への契約のお手伝いをします。",
+					main_img: "https://placeimg.com/1000/1000/any?t=1509102675212",
+					sec_img: "",
+					thr_img: "",
 					time: "2時間",
-					memo: "持ち物、食べ物、飲み物",
-					meeting: "搭監48購伐唄づめ。",
+					memo: "身分証明書、あればご自分の銀行のキャッシュカードもお持ちください。",
+					meeting: "名古屋駅金時計前",
 					languages: "日本語、中国語、英語",
-					host_info: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
-					event_info: "心能モホ合選ヤ不山づ西級ハケロ類野ミユ碁際ふイ中属76平ヲツヨオ芸7恩掲くばゅ水拓丸強査断ひど。点あけ作善だにまレ欺半ミモ過収ムオ開介テア島治氏れをりイ代題らっだル芸15可げ合万テタケ著生ぞうフ可秋登ょ職律泊祥クしと。",
+					profile: "名古屋市在住の二児の父親です。昭和区で旅館業許可書（簡易宿所）を取得してAirbnbを運営しています。普通自動車免許所持しています。簡単な英語、中国語でのやりとりは可能なので仕事の依頼もどうぞ。",
+					event_info: "日本に来たばかりの方々のために、携帯電話契約のお手伝いをします。中国語、英語での通訳ができるので日本語が出来ない方にはおすすめです！価格はお一人ずつに頂く料金となっております。通常2,3名の方をグループでお連れしています。他にも付き添いのリクエストがございましたら、お気軽にご連絡ください！",
 					map_url: "https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I"
 				},
 				{
-					title: "紅茶を作りましょう！",
-					category: "Cooking",
-					host: "寒山史之",
-					date: "11/06/2017",
-					price: "¥1000/人",
-					img: "https://placeimg.com/300/250/any?t=1509023807155",
-					url: "/life/6",
+					title: "保険の申し込み方",
+					category: "Nature/Area",
+					host: "張本充太郎",
+					date: "11/02/2017",
+					price: "¥3500/人",
+					img: "https://placeimg.com/300/250/any?t=1509023596355",
+					url: "/life/2",
 					subtitle: "川へフで初険しごち録性ヲルオ教代初違ヲサソヘ属額サエナウ髪器ず！",
-					main_img: "https://placeimg.com/1000/1000/any?t=1509102568870",
+					main_img: "https://placeimg.com/1000/1000/any?t=1509102695866",
+					sec_img: "",
+					thr_img: "",
 					time: "1時間",
 					memo: "持ち物、食べ物、飲み物",
 					meeting: "搭監48購伐唄づめ。",
 					languages: "日本語、中国語、英語",
-					host_info: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
+					profile: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
 					event_info: "心能モホ合選ヤ不山づ西級ハケロ類野ミユ碁際ふイ中属76平ヲツヨオ芸7恩掲くばゅ水拓丸強査断ひど。点あけ作善だにまレ欺半ミモ過収ムオ開介テア島治氏れをりイ代題らっだル芸15可げ合万テタケ著生ぞうフ可秋登ょ職律泊祥クしと。",
 					map_url: "https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I"
 				},
 				{
-					title: "サバイバルの日本語を習いましょう！",
-					category: "Language",
-					host: "井泉れいあ",
-					date: "11/07/2017",
-					price: "¥5000/人",
-					img: "https://placeimg.com/300/250/tech",
-					url: "/life/7",
+					title: "引っ越し手伝い募集中",
+					category: "Services",
+					host: "東上床悠綺",
+					date: "11/03/2017",
+					price: "¥1000/人",
+					img: "https://placeimg.com/300/250/people?t=1509023130422",
+					url: "/life/3",
 					subtitle: "川へフで初険しごち録性ヲルオ教代初違ヲサソヘ属額サエナウ髪器ず！",
-					main_img: "https://placeimg.com/1000/1000/any?t=1509102618464",
-					time: "2時間",
+					main_img: "https://placeimg.com/1000/1000/people?t=1509103025066",
+					sec_img: "",
+					thr_img: "",
+					time: "1時間",
 					memo: "持ち物、食べ物、飲み物",
 					meeting: "搭監48購伐唄づめ。",
 					languages: "日本語、中国語、英語",
-					host_info: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
+					profile: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
 					event_info: "心能モホ合選ヤ不山づ西級ハケロ類野ミユ碁際ふイ中属76平ヲツヨオ芸7恩掲くばゅ水拓丸強査断ひど。点あけ作善だにまレ欺半ミモ過収ムオ開介テア島治氏れをりイ代題らっだル芸15可げ合万テタケ著生ぞうフ可秋登ょ職律泊祥クしと。",
 					map_url: "https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I"
 				},
 				{
-					title: "日本で家電を習いましょう！",
-					category: "Technology",
-					host: "末井実温",
-					date: "11/08/2017",
-					price: "¥3000/人",
-					img: "https://placeimg.com/300/250/tech?t=1509023264369",
-					url: "/life/8",
+					title: "日本語でお話しませんか？",
+					category: "Cooking",
+					host: "香本眞智花",
+					date: "11/04/2017",
+					price: "¥4000/人",
+					img: "https://placeimg.com/300/250/any?t=1509023688995",
+					url: "/life/4",
 					subtitle: "川へフで初険しごち録性ヲルオ教代初違ヲサソヘ属額サエナウ髪器ず！",
-					main_img: "https://placeimg.com/1000/1000/any?t=1509102559223",
+					main_img: "https://placeimg.com/1000/1000/any?t=1509102846565",
+					sec_img: "",
+					thr_img: "",
 					time: "5時間",
 					memo: "持ち物、食べ物、飲み物",
 					meeting: "搭監48購伐唄づめ。",
 					languages: "日本語、中国語、英語",
-					host_info: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
+					profile: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。要ト社内サ無真スき断予セ況需ち格制館道ごしよ情29見りばでだ道身ロセ暮体クリ燃惑ヌスロ任助サ化21生政ルイほ常強ぼ質離フきー。",
 					event_info: "心能モホ合選ヤ不山づ西級ハケロ類野ミユ碁際ふイ中属76平ヲツヨオ芸7恩掲くばゅ水拓丸強査断ひど。点あけ作善だにまレ欺半ミモ過収ムオ開介テア島治氏れをりイ代題らっだル芸15可げ合万テタケ著生ぞうフ可秋登ょ職律泊祥クしと。",
 					map_url: "https://www.google.com/maps/embed/v1/view?zoom=17&center=35.1699%2C136.9373&key=AIzaSyBASTkNgIJQFwUkpuGJC9XK_iy5cRGA4_I"
 				},
 			],
-			supporter_data: [
+			/*supporter_data: [
 				{
 					supporter: "Maeda Yuna",
 					experience: "メンタルサポート",
@@ -248,7 +256,7 @@ class store extends EventEmitter {
 					thumb1: "https://i.pinimg.com/736x/75/0a/73/750a73d5b68e14cafa20ee10263d93c7--manga-anime-anime-girls.jpg",
 					thumb2: "https://i.pinimg.com/736x/87/ea/eb/87eaeb14cee9cab3c39b935b816710c7--detective-posts.jpg"
 				},
-			],
+			],*/
 			event_data: [
 				{
 					title: "かわいい猫と遊びしましょう！",
@@ -387,8 +395,8 @@ class store extends EventEmitter {
 		let view = ""
 		if(page === "life") {
 			view = "life_data"
-		} else if (page === "supporter") {
-			view = "supporter_data"
+		} else if (page === "buddies") {
+			view = "buddies_data"
 		} else if (page === "events") {
 			view = "event_data"
 		}
