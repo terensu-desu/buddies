@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { withAuth } from '@okta/okta-react'
 
 class Navbar extends Component{
 	render() {
+		console.log(this.props)
 		return (
 			<nav>
 				<div className="nav-wrapper white accent-text">
 					<Link to="/" className="brand-logo accent-text"><img className="vit-logo" src="https://i.imgur.com/zh52eL6.png" alt="logo"/></Link>
-					<a className="brand-sublogo accent-text hide-on-med-and-down"><span className="brand-name">Buddies</span>     みんながみんなの心のサプリメント！</a>
+					<a className="brand-sublogo accent-text hide-on-med-and-down"><span className="brand-name">Buddies</span>     仲間と出会い、つながる、支え合う</a>
 					<a href="#!" data-activates="sidebar-nav" className="button-collapse accent-text"><i className="material-icons">menu</i></a>
 					<ul id="nav-mobile" className="right hide-on-med-and-down show-on-large">
 						<li><a className="accent-text" href="#!">About</a></li>
