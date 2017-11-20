@@ -32,7 +32,7 @@ span, .brand-logo, .accent-text {
 }
 
 .no-margin-top {
-	margin-top: 0
+	margin-top: 0 !important;
 }
 
 .no-margin-bot {
@@ -45,6 +45,10 @@ span, .brand-logo, .accent-text {
 
 .card-image-round {
 	border-radius: 15px 15px 0 0 !important
+}
+
+.card-image-semi-round {
+	border-radius: 0 15px 0 0 !important
 }
 
 /* Styling for Navbar */
@@ -86,22 +90,12 @@ span, .brand-logo, .accent-text {
 	margin-left: 45%
 }
 
-/* Styling for Banner -- NOW OUTDATED -- Styling for SearchBar */
+.close-text {
+	font-size: 1.3rem
+}
+
+/* Styling for SearchBar */
 /* banner patterned img from patterncooler.com */
-.banner {
-	background: url(https://i.imgur.com/qVu8peB.png);
-	height: 240px
-}
-
-.banner-title, .banner-subtitle {
-	text-shadow: 0.4rem 0.4rem 1.2rem black,
-								-0.1rem -0.1rem 0.4rem black;
-}
-
-.banner-subtitle {
-	margin-left: 5%
-}
-
 .search-margin-push {
 	margin-top: 12px
 }
@@ -118,10 +112,6 @@ span, .brand-logo, .accent-text {
 	background: rgba(0,0,0,0.4);
 }
 
-.featured-carousel {
-	max-height: 250px
-}
-
 .cat-circle {
 	margin-top: 5px;
 	padding: 5px 10px 5px 10px;
@@ -133,23 +123,6 @@ span, .brand-logo, .accent-text {
 
 .featured-btn {
 	background-color: #ef6c00;
-}
-
-.carsoul-container {
-	padding: 5px;
-}
-
-.slick-prev:before, .slick-next:before {
-	color: #ef6c00;
-}
-
-.carousel-item {
-	opacity: 1 !important;
-	z-index: 1;
-}
-
-.close-text {
-	font-size: 1.3rem
 }
 
 /* Styling for Events & Supporter */
@@ -183,7 +156,8 @@ span, .brand-logo, .accent-text {
 .thumbnail {
 	width: 60px;
 	height: 75px;
-	margin-right: 10px
+	margin-right: 10px;
+	border: 1px solid #ef6c00;
 }
 
 .reviews-text {
