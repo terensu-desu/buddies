@@ -84,8 +84,54 @@ class Featured extends Component{
 		return dataMap
 	}
 
+	handlePreviewData(filter) {
+		let data = []
+		if(filter === "request") {
+			data = this.props.lifeData.slice(0,4)
+		}else if(filter === "buddies") {
+			data = this.props.buddiesData.slice(0,4)
+		}
+		const dataMap = data.map((item,i) => {
+			return (
+				<div className="col s6" key={i}>
+					<div className="card card-round hoverable">
+						<Link to={item.url}>
+							<div className="card-image">
+								<img className="card-image-round" src={item.img} alt="featured preview" />
+								<div className="close-text card-title featured-title">{item.title}</div>
+							</div>
+							<div className="card-content">
+								<div className="row featured-row">
+									<div className="col s12 m8">
+										<p>{item.host}</p>
+									</div>
+									<div className="col s12 m4">
+										<div className="star-ratings-featured-css">
+										  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+										  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+										</div>
+									</div>
+								</div>
+								<div className="row featured-row">
+									<div className="col s12 m6">
+										<p>{item.time}</p>
+									</div>
+									<div className="col s12 m6">
+										<p className="right hide-on-small-only">{item.price}</p>
+										<p className="hide-on-med-and-up show-on-small">{item.price}</p>
+									</div>
+								</div>
+							</div>
+						</Link>
+					</div>
+				</div>
+			)
+		})
+		return dataMap
+	}
+
 	handleSupporterDataV() {
-		const data = this.props.supporterData.slice(0,4)
+		const data = this.props.buddiesData.slice(0,4)
 		const dataMap = data.map((item, i) => {
 			return (
 				<div className="col s6" key={i}>
@@ -217,11 +263,11 @@ class Featured extends Component{
 							<div className="card-panel card-round">
 									<div className="row no-margin-top">
 										<div className="col s12">
-											<h4 className="no-margin-bot">みんなのリクエスト</h4>
+											<h4 className="no-margin-bot no-margin-top">みんなのリクエスト</h4>
 										</div>
 									</div>
 									<div className="row no-margin-bot">
-										{this.handleLifeDataV()}
+										{this.handlePreviewData("request")}
 										<a href="#!" className="right btn orange darken-3">もっと</a>
 									</div>
 							</div>
@@ -230,11 +276,11 @@ class Featured extends Component{
 							<div className="card-panel card-round">
 								<div className="row no-margin-top">
 									<div className="col s12">
-										<h4 className="no-margin-bot">みんなのサポート</h4>
+										<h4 className="no-margin-bot no-margin-top">みんなのサポート</h4>
 									</div>
 								</div>
 								<div className="row no-margin-bot">
-									{this.handleSupporterDataV()}
+									{this.handlePreviewData("buddies")}
 									<a href="#!" className="right btn orange darken-3">もっと</a>
 								</div>
 							</div>
