@@ -6,7 +6,7 @@ import store from '../store'
 class SupporterPage extends Component{
 	constructor(props) {
 		super(props)
-		this.data = store.getPageData("supporter", props.match.params.id)
+		this.data = store.getPageData("buddies", props.match.params.id)
 	}
 	render() {
 		return (

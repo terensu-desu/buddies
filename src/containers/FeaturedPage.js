@@ -11,7 +11,7 @@ class FeaturedPage extends Component{
 
 	render() {
 		return (
-			<Featured lifeData={ this.data.life_data } supporterData={ this.data.supporter_data } eventData={ this.data.event_data } />
+			<Featured lifeData={ this.data.life_data } buddiesData={ this.data.buddies_data } eventData={ this.data.event_data } />
 		)
 	}
 }
