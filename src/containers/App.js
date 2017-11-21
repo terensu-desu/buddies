@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom' //can use HashRouter if running into trouble on builds
-import { Security, SecureRoute, ImplicitCallback, withAuth } from '@okta/okta-react'
+import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react'
 import Navbar from '../components/Navbar'
 import FeaturedPage from '../containers/FeaturedPage'
 import LifePage from '../containers/LifePage'
@@ -10,39 +10,19 @@ import Search from '../components/Search'
 import Protected from '../components/Protected'
 import LoginPage from '../components/LoginPage'
 
-const config = {
-  issuer: 'https://dev-345698.oktapreview.com/oauth2/default',
-  redirectUri: window.location.origin + '/implicit/callback',
-  clientId: '0oacxjbp9y3dH50cI0h7'
-}
-
 function onAuthRequired({history}) {
   history.push('/login')
 }
 
-export default withAuth(class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { authenticated: null }
-    this.checkAuthentication = this.checkAuthentication.bind(this)
-  }
-
-  async checkAuthentication() {
-    const authenticated = await this.props.auth.isAuthenticated()
-    if(authenticated !== this.state.authenticated) {
-      this.setState({ authenticated })
-    }
-  }
-
-  componentDidUpdate() {
-    this.checkAuthentication()
-  }
-
+class App extends Component {
   render() {
     return (
       <Router>
-          <Security issuer={config.issuer} client_id={config.clientId} redirect_uri={config.redirect_uri}>
-            <Navbar authenticated={this.state.authenticated} />
+          <Security issuer="https://dev-345698.oktapreview.com/oauth2/default"
+                    client_id="0oacxjbp9y3dH50cI0h7"
+                    redirect_uri={window.location.origin + '/implicit/callback'}
+                    onAuthRequired={onAuthRequired} >
+            <Navbar />
             <Search />
             <Route exact path="/" component={FeaturedPage} />
             <SecureRoute path="/protected" component={Protected} />
@@ -55,4 +35,6 @@ export default withAuth(class App extends Component {
       </Router>
     )
   }
-})
+}
+
+export default App
