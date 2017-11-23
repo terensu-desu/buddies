@@ -7,12 +7,12 @@
     "@okta/okta-react": "0.0.7",
     "@okta/okta-signin-widget": "^2.4.0",
     "babel-preset-env": "^1.6.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^1.1.0",
     "react-scripts": "1.0.14"
   },
   "scripts": {
