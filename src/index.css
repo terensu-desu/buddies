@@ -108,6 +108,7 @@ span, .brand-logo, .accent-text {
 
 .featured-title {
 	font-size: 1.4rem !important;
+	padding: 12px !important;
 	width: 100%;
 	background: rgba(0,0,0,0.4);
 }
@@ -121,24 +122,24 @@ span, .brand-logo, .accent-text {
 	display: inline-block;
 }
 
-.featured-btn {
-	background-color: #ef6c00;
+/* Styling for Featured Page */
+.featured-text {
+	font-size: 1.1rem
 }
 
-/* Styling for Events & Supporter */
+/* Styling for Detail Page */
 .host-circle-pic {
 	float: right;
 	width: 85px;
 	height: 85px;
 }
 
-#main-image {
-	width: 412px
+.page-main-img {
+	max-width: 450px !important;
 }
 
-.page-main-img {
-	max-height: 600px;
-	max-width: 412px;
+#mapDiv {
+	margin-top: 10px;
 }
 
 .area-map {
