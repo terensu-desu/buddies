@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 class Navbar extends Component{
 	render() {
+		console.log("Navbar props: ", this.props)
 		return (
 			<nav>
 				<div className="nav-wrapper white accent-text">
@@ -11,9 +12,10 @@ class Navbar extends Component{
 					<a href="#!" data-activates="sidebar-nav" className="button-collapse accent-text"><i className="material-icons">menu</i></a>
 					<ul id="nav-mobile" className="right hide-on-med-and-down show-on-large">
 						<li><a className="accent-text" href="#!">About</a></li>
-						{this.props.authenticated ? 
+						{this.props.authentication ? 
 							<li><a className="accent-text" href="#!">Logout</a></li> : 
-							<li><Link to="/login" className="accent-text">Login</Link></li>}
+							<li><Link to="/login" className="accent-text">Login</Link></li>
+						}
 						<li><a className="accent-text" href="#!">Sign Up</a></li>
 						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown1" data-beloworigin="true"><i className="material-icons right">language</i></a></li>
 					</ul>
