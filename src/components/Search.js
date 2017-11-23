@@ -13,9 +13,12 @@ class Search extends Component{
 										<i className="material-icons prefix search-margin-push">search</i>
 										<input type="search" id="searchBar" className="autocomplete" />
 										<label htmlFor="searchBar">Search Buddies</label>
+										<div className="center">
+											<a className="btn orange darken-3 search-margin-push hide-on-large-only show-on-medium-only">Search!</a>
+										</div>
 									</div>
 									<div className="col s12 m2 center">
-										<a className="btn orange darken-3 search-margin-push">Search!</a>
+										<a className="btn orange darken-3 search-margin-push hide-on-med-and-down">Search!</a>
 									</div>
 								</div>
 							</div>
