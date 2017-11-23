@@ -20,10 +20,10 @@ class Featured extends Component{
 							</div>
 							<div className="card-content">
 								<div className="row featured-row">
-									<div className="col s12 m8">
-										<p>{item.host}</p>
+									<div className="col s12 m7">
+										<p className="featured-text">{item.host}</p>
 									</div>
-									<div className="col s12 m4">
+									<div className="col s12 m5">
 										<div className="star-ratings-featured-css">
 										  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 										  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
@@ -31,12 +31,12 @@ class Featured extends Component{
 									</div>
 								</div>
 								<div className="row featured-row">
-									<div className="col s12 m6">
-										<p>{item.time}</p>
+									<div className="col s12 m5">
+										<p className="featured-text">{item.time}</p>
 									</div>
-									<div className="col s12 m6">
-										<p className="right hide-on-small-only">{item.price}</p>
-										<p className="hide-on-med-and-up show-on-small">{item.price}</p>
+									<div className="col s12 m7">
+										<p className="featured-text right hide-on-small-only">{item.price}</p>
+										<p className="hide-on-med-and-up show-on-small featured-text">{item.price}</p>
 									</div>
 								</div>
 							</div>
@@ -94,9 +94,37 @@ class Featured extends Component{
 							<div className="card-panel card-round">
 								<div className="center">
 									<h5>Buddiesは海外から来た人と現地のつなげwin-winを作るサービスです。</h5>
-									<hr/>
+									<div className="divider"></div>
 									<img className="responsive-img" src="https://i.imgur.com/4TCm4Ec.png" alt="service breakdown" />
-									<hr/>
+									<div className="divider"></div>
+									<div className="row">
+										<div className="col s12">
+											<h4>安心してご利用していただくための取り組み</h4>
+										</div>
+									</div>
+									<div className="row">
+							      <div className="col s4">
+							      	<div className="center promo">
+								      	<i className="material-icons large vit-accent">rate_review</i>
+								      	<h5>レビュー評価</h5>
+								      	<p>府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。</p>
+							      	</div>
+							      </div>
+							      <div className="col s4">
+							      	<div className="center promo">
+							      		<i className="material-icons large vit-accent">perm_identity</i>
+								      	<h5>ID認証</h5>
+								      	<p>府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。</p>
+								      </div>
+							      </div>
+							      <div className="col s4">
+							      	<div className="center promo">
+								      	<i className="material-icons large vit-accent">remove_red_eye</i>
+								      	<h5>パトロール</h5>
+								      	<p>府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。</p>
+							      	</div>
+							      </div>
+							    </div>
 								</div>
 							</div>
 						</div>
