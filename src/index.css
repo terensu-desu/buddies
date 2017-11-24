@@ -101,6 +101,31 @@ span, .brand-logo, .accent-text {
 }
 
 /* Styling for Featured */
+.card-content {
+	padding: 12px !important;
+}
+
+.cat-circle {
+	margin-top: 5px;
+	padding: 5px 10px 5px 10px;
+	background-color: white;
+	border: 1px solid #ef6c00 !important;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+.collection {
+	border: none !important;
+}
+
+.collection a {
+	color: #ef6c00 !important;
+}
+
+.collection-item {
+	margin-bottom: 10px !important;
+}
+
 .featured-row {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
@@ -113,18 +138,8 @@ span, .brand-logo, .accent-text {
 	background: rgba(0,0,0,0.4);
 }
 
-.cat-circle {
-	margin-top: 5px;
-	padding: 5px 10px 5px 10px;
-	background-color: white;
-	border: 1px solid #ef6c00;
-	border-radius: 15px;
-	display: inline-block;
-}
-
-/* Styling for Featured Page */
 .featured-text {
-	font-size: 1.1rem
+	font-size: 1.3rem
 }
 
 /* Styling for Detail Page */
