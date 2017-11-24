@@ -52,6 +52,9 @@ class Featured extends Component{
 		const category = ["すべて","交通","市役所","学校","病院","銀行・金融","子ども","趣味","生活相談",
 											"料理","食事","美容・ファッション","生活","文化","学業","お金","子育て","健康",
 											"職場","睡眠","ホームパーティ","居酒屋・バー",];
+		const category1 = ["交通","市役所","学校","病院","銀行・金融","子ども","趣味","生活相談","料理","食事","美容・ファッション","その他"]
+		const category2 = ["生活","文化","学業","お金","子育て","健康","職場","睡眠","その他"]
+		const category3 = ["ホームパーティ","居酒屋・バー","その他"]
 		const prefectures = ["すべて","愛知県","秋田県","青森県","千葉県","愛媛県","福井県","福岡県","岐阜県","群馬県",
 											"広島県","北海道","兵庫県	","茨城県	","石川県	","岩手県	","香川県","鹿児島県	","神奈川県",
 											"高知県","熊本県","京都府","三重県","宮城県","宮崎県","長野県","長崎県","奈良県","新潟県",
@@ -129,28 +132,82 @@ class Featured extends Component{
 							</div>
 						</div>
 					</div>
-					<div className="row">
-						<br/>
+					<div className="row no-margin-bot">
 						<div className="col s12">
-							<div className="row">
-								<div className="col s12">
-									<div className="card-panel card-round">
-										<div className="row">
-											<h4>カテゴリー</h4>
-											{category.map((item, i) => {
-													return (
-														<div className="col s6 m6 l4 xl2" key={i}>
-															<a className="vit-accent cat-circle z-depth-2">{item}</a>
-														</div>
-													)
-												})
-											}
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+							<div className=" card-panel card-round">
+								<div className="row">
+									<h4>カテゴリー</h4>
+						      <div className="col s4">
+						      	<div className="center">
+							      	<h5>Buddies</h5>
+							      	<div className="row">
+							      		<div className="col s6">
+							      			<ul className="collection card-round">
+														{category1.slice(0,6).map((item, i) => {
+																return (
+																	<a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+																)
+															})
+														}
+													</ul>
+							      		</div>
+							      		<div className="col s6">
+							      			<ul className="collection card-round">
+														{category1.slice(7,12).map((item, i) => {
+																return <a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+															})
+														}
+													</ul>
+							      		</div>
+							      	</div>
+						      	</div>
+						      </div>
+						      <div className="col s4">
+						      	<div className="center">
+							      	<h5>Life</h5>
+							      	<div className="row">
+							      		<div className="col s6">
+							      			<ul className="collection card-round">
+														{category2.slice(0,5).map((item, i) => {
+																return (
+																	<a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+																)
+															})
+														}
+													</ul>
+							      		</div>
+							      		<div className="col s6">
+							      			<ul className="collection card-round">
+														{category2.slice(6,10).map((item, i) => {
+																return <a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+															})
+														}
+													</ul>
+							      		</div>
+							      	</div>
+							      </div>
+						      </div>
+						      <div className="col s4">
+						      	<div className="center">
+							      	<h5>Events</h5>
+							      	<div className="row">
+							      		<div className="col s12">
+							      			<ul className="collection card-round">
+														{category3.map((item, i) => {
+																return (
+																	<a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+																)
+															})
+														}
+													</ul>
+							      		</div>
+							      	</div>
+						      	</div>
+						      </div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
 					<div className="row">
 						<br/>
 						<div className="col s12">
