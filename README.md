@@ -11,15 +11,16 @@ Wants 100 customers by the end of the year.
 ## Priorities
 - Login and register. OAuth2. - High
   - 11/19, added functionality for logins using Okta account info
-  - Next will try to get OAuth2 social logins working
-  - Also validate tokens to show secure data
-
-- Clean up individual pages structure. - High
+  - 11/21, completed login function using Okta account info.
+  - Next will be to get routing working correctly to show secure data.
+  - Eventually will try to get OAuth2 social logins included.
 - Browse page, have filter buttons (include gender option) - High
 - Set up language filter to use local browser storage to save language preference. - Medium; requires language packs ready
-- Restructure pages into smaller density (2 files?). - Low
+
 
 ## Completion list
+  - Clean up individual pages structure. - High. Finished - 11/23
+  - Restructure pages into smaller density (2 files?). - Low. Finished - 11/23
   - Removed banner -> Changed to Search bar
     - Ask for clarification and add Anqi's requests
     - Add autocomplete when Materialize drops jQuery dependency
