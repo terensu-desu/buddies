@@ -8,6 +8,8 @@ Wants 100 customers by the end of the year.
   - Reach out to social media and blogs.
   - QR code creation with a link to site.
 
+Send Anqi a picture of yourself
+
 ## Priorities
 - Login and register. OAuth2. - High
   - 11/19, added functionality for logins using Okta account info
@@ -16,7 +18,9 @@ Wants 100 customers by the end of the year.
   - Eventually will try to get OAuth2 social logins included.
 - Browse page, have filter buttons (include gender option) - High
 - Set up language filter to use local browser storage to save language preference. - Medium; requires language packs ready
-
+- Think about where to add interview video
+- Recommended page can show up after clicking on "motto" which would take you to the browse page like Anytime's page
+- Browse page is split into two parents, Requests and Support. 
 
 ## Completion list
   - Clean up individual pages structure. - High. Finished - 11/23
