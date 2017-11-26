@@ -10,10 +10,8 @@ class DetailPageFilter extends Component{
 	}
 	render() {
 		return (
-			<div className="section">
-				<div className="container">
-					<DetailPage data={ this.data } />
-				</div>
+			<div className="container">
+				<DetailPage data={this.data} />
 			</div>
 		)
 	}
