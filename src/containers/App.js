@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom' //can use HashRouter if running into trouble on builds
+import { HashRouter as Router, Route } from 'react-router-dom' //can use HashRouter or BrowserRouter if running into trouble on builds
 import Navbar from '../components/Navbar'
 import FeaturedPage from '../containers/FeaturedPage'
 import DetailPageFilter from '../containers/DetailPageFilter'
 import Search from '../components/Search'
+import BrowsePageFilter from '../containers/BrowsePageFilter'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Router>
@@ -13,14 +14,13 @@ class App extends Component {
             <Navbar />
             <Search />
             <Route exact path="/" component={FeaturedPage} />
-            <Route exact path="/:page/:id" component={DetailPageFilter} />
+            <Route path="/details/:page/:id" component={DetailPageFilter} />
+            <Route path="/browse/:filter" component={BrowsePageFilter} />
         </div>
       </Router>
     )
   }
 }
-
-export default App
 
 /* Keeping Okta things commented out until PR#51 goes npm.
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react'
