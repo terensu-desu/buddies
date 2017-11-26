@@ -142,6 +142,11 @@ span, .brand-logo, .accent-text {
 	font-size: 1.3rem
 }
 
+/* Styling for Browse Page */
+.small {
+	height: 200px !important;
+}
+
 /* Styling for Detail Page */
 .host-circle-pic {
 	float: right;
