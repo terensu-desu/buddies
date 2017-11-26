@@ -81,7 +81,7 @@ class DetailPage extends Component{
 								<div className="row">
 									<div className="col s12">
 										<div className="close-text">
-											<i className="material-icons left">face</i><span>サポーターのプロフィール</span>
+											<i className="material-icons left">face</i><span>ホストのプロファイル</span>
 										</div>
 										<div className="display-linebreak close-text">
 											{data.profile}
@@ -89,6 +89,7 @@ class DetailPage extends Component{
 									</div>
 								</div>
 								<hr/>
+								{data.map_url ? 
 								<div className="row">
 									<br/>
 									<div className="center col s12">
@@ -99,7 +100,8 @@ class DetailPage extends Component{
 									<div id="mapDiv" className="col s12 hidden">
 										<iframe className="area-map" title="map" src={data.map_url} allowFullScreen></iframe>
 									</div>
-								</div>
+								</div> :
+								null}
 								<br/>
 								<div className="row hide-on-large-only show-on-medium-and-down">
 									<div className="col center s12">
