@@ -7,15 +7,41 @@ import Search from '../components/Search'
 import BrowsePageFilter from '../containers/BrowsePageFilter'
 
 export default class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      language: "japanese",
+    }
+    this.changeLanguage = this.changeLanguage.bind(this)
+  }
+
+  changeLanguage(e,newLanguage) {
+    e.preventDefault()
+    if(newLanguage === "japanese") {
+      this.setState({
+        language: "japanese"
+      })
+    }else if(newLanguage === "english") {
+      this.setState({
+        language: "english"
+      })
+    }else if(newLanguage === "chinese") {
+      this.setState({
+        language: "chinese"
+      })
+    }
+    console.log(this.state)
+  }
+
   render() {
     return (
       <Router>
         <div>
-            <Navbar />
+            <Navbar lang={this.state.language} changeLanguage={() => this.changeLanguage} />
             <Search />
-            <Route exact path="/" component={FeaturedPage} />
-            <Route path="/details/:page/:id" component={DetailPageFilter} />
-            <Route path="/browse/:filter" component={BrowsePageFilter} />
+            <Route exact path="/" render={() => <FeaturedPage lang={this.state.language} />} />
+            <Route path="/browse/:filter" render={({match}) => <BrowsePageFilter match={match} lang={this.state.language} />} />
+            <Route path="/details/:section/:page/:id" render={({match}) => <DetailPageFilter match={match} lang={this.state.language} />} />
         </div>
       </Router>
     )

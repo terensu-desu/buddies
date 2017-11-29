@@ -7,16 +7,16 @@ export default class BrowsePage extends Component {
 		this.handlePreviewData = this.handlePreviewData.bind(this)
 	}
 
-	handlePreviewData(filter) {
+	handlePreviewData(subfilter) {
+		console.log(this.props)
 		let data = []
-		if(filter === "requests") {
-			data = this.props.data.requests_data.slice(0,4)
-		}else if(filter === "buddies") {
-			data = this.props.data.buddies_data.slice(0,4)
-		}else if(filter === "events") {
-			data = this.props.data.event_data.slice(0,4)
-		}else if(filter === "life") {
-			data = this.props.data.life_data.slice(0,4)
+		let info = this.props.displayData
+		if(subfilter === "buddies") {
+			data = info[this.props.filter].buddies.slice(0,4)
+		}else if(subfilter === "life") {
+			data = info[this.props.filter].life.slice(0,4)
+		}else if(subfilter === "events") {
+			data = info[this.props.filter].events.slice(0,4)
 		}
 		const dataMap = data.map((item,i) => {
 			return (

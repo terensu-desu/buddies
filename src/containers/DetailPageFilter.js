@@ -6,7 +6,7 @@ import store from '../store'
 class DetailPageFilter extends Component{
 	constructor(props) {
 		super(props)
-		this.data = store.getPageData(props.match.params.page, props.match.params.id)
+		this.data = store.retrieveDetailData(props.lang, props.match.params.section, props.match.params.page, props.match.params.id)
 	}
 	render() {
 		return (

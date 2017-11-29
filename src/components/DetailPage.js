@@ -45,7 +45,7 @@ class DetailPage extends Component{
 										<div className="close-text"><i className="material-icons left">nature_people</i><span>集合場所:</span> {data.meeting}</div>
 										<div className="row">
 											<div className="col s12">
-												<div className="star-ratings-css left">
+												<div className="star-ratings-detail-css left">
 												  <div className="star-ratings-css-top" style={{width: "90%"}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 												  <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
 												</div>

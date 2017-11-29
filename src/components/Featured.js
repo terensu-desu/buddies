@@ -2,12 +2,19 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 class Featured extends Component{
+	constructor(props) {
+		super(props)
+		this.view = props.displayData.view
+		this.requests = props.displayData.requests
+		this.support = props.displayData.support
+	}
+
 	handlePreviewData(filter) {
 		let data = []
 		if(filter === "requests") {
-			data = this.props.requestsData.slice(0,4)
-		}else if(filter === "buddies") {
-			data = this.props.buddiesData.slice(0,4)
+			data = this.requests.buddies.slice(0,4)
+		}else if(filter === "support") {
+			data = this.support.buddies.slice(0,4)
 		}
 		const dataMap = data.map((item,i) => {
 			return (
@@ -16,7 +23,7 @@ class Featured extends Component{
 						<Link to={item.url}>
 							<div className="card-image">
 								<img className="card-image-round" src={item.img} alt="featured preview" />
-								<div className="close-text card-title featured-title">{item.title}</div>
+								<div className="close-text card-title featured-title truncate">{item.title}</div>
 							</div>
 							<div className="card-content">
 								<div className="row featured-row">
@@ -69,7 +76,7 @@ class Featured extends Component{
 								</div>
 								<div className="row no-margin-bot">
 									{this.handlePreviewData("requests")}
-									<Link to="/browse/request" className="right btn orange darken-3">もっと</Link>
+									<Link to="/browse/requests" className="right btn orange darken-3">もっと</Link>
 								</div>
 						</div>
 					</div>
@@ -81,7 +88,7 @@ class Featured extends Component{
 								</div>
 							</div>
 							<div className="row no-margin-bot">
-								{this.handlePreviewData("buddies")}
+								{this.handlePreviewData("support")}
 								<Link to="/browse/support" className="right btn orange darken-3">もっと</Link>
 							</div>
 						</div>
@@ -91,15 +98,11 @@ class Featured extends Component{
 					<div className="col s12">
 						<div className="card-panel card-round">
 							<div className="center">
-								<h4>Buddiesは海外から来た人と現地のつなげwin-winを作るサービスです。</h4>
+								<h4 className="flow-text">Buddiesは海外から来た人と現地のつなげwin-winを作るサービスです。</h4>
 								<div className="divider"></div>
 								<img className="responsive-img" src="https://i.imgur.com/4TCm4Ec.png" alt="service breakdown" />
 								<div className="divider"></div>
-								<div className="row">
-									<div className="col s12">
-										<h4>安心してご利用していただくための取り組み</h4>
-									</div>
-								</div>
+								<h4 className="flow-text">安心してご利用していただくための取り組み</h4>
 								<div className="row">
 						      <div className="col s4">
 						      	<div className="center promo">
@@ -135,7 +138,7 @@ class Featured extends Component{
 									<h4>カテゴリー</h4>
 								</div>
 							</div>
-							<div className="row no-margin-top">
+							<div className="row no-margin-top hide-on-med-and-down">
 					      <div className="col s4">
 					      	<div className="center">
 						      	<h5>Buddies</h5>
@@ -203,6 +206,43 @@ class Featured extends Component{
 						      	</div>
 					      	</div>
 					      </div>
+					    </div>
+					    <div className="row no-margin-top show-on-medium-and-down hide-on-large-only">
+					    	<div className="col s12">
+					    		<h5>Buddies</h5>
+					    		{category1.slice(0,6).map((item, i) => {
+											return (
+												<a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+											)
+										})
+									}
+									{category1.slice(7,13).map((item, i) => {
+											return (
+												<a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+											)
+										})
+									}
+					    	</div>
+					    </div>
+					    <div className="row no-margin-top show-on-medium-and-down hide-on-large-only">
+					    	<div className="col s6">
+					    		<h5>Life</h5>
+					    		{category2.slice(0,6).map((item, i) => {
+											return (
+												<a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+											)
+										})
+									}
+					    	</div>
+					    	<div className="col s6">
+					    		<h5>Events</h5>
+					    		{category3.slice(0,6).map((item, i) => {
+											return (
+												<a className="collection-item vit-accent cat-circle z-depth-2" key={i} href="#!">{item}</a>
+											)
+										})
+									}
+					    	</div>
 					    </div>
 				    </div>
 			    </div>

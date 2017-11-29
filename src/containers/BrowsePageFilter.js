@@ -4,12 +4,12 @@ import store from '../store'
 
 // this will receive store data and send data to BrowsePage.js
 class BrowsePageFilter extends Component{
-	constructor() {
-		super()
-		this.data = store.getData()
+	constructor(props) {
+		super(props)
+		this.data = store.retrieveData(props.lang)
 	}
 	render() {
-		return <BrowsePage data={this.data} filter={this.props.match.params.filter} />
+		return <BrowsePage displayData={this.data} filter={this.props.match.params.filter} match={this.props.match} />
 	}
 }
 
