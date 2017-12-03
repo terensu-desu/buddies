@@ -7,7 +7,6 @@ class DetailPage extends Component{
 		this.handleMapClick = this.handleMapClick.bind(this)
 	}
 	handleMapClick() {
-		console.log("We've been clicked!")
 		const mapStatus = this.mapVisible
 		if(mapStatus === false) {
 			document.getElementById("mapOpenButton").classList.add("hidden")
@@ -88,20 +87,6 @@ class DetailPage extends Component{
 										</div>
 									</div>
 								</div>
-								<hr/>
-								{data.map_url ? 
-								<div className="row">
-									<br/>
-									<div className="center col s12">
-										<a id="mapOpenButton" className="btn appointment-btn orange darken-3" onClick={this.handleMapClick}>See the event on the map! <i className="material-icons right">expand_more</i></a>
-										<a id="mapCloseButton" className="btn appointment-btn orange darken-3 hidden" onClick={this.handleMapClick}>Close the map. <i className="material-icons right">expand_less</i></a>
-									</div>
-									<br/>
-									<div id="mapDiv" className="col s12 hidden">
-										<iframe className="area-map" title="map" src={data.map_url} allowFullScreen></iframe>
-									</div>
-								</div> :
-								null}
 								<br/>
 								<div className="row hide-on-large-only show-on-medium-and-down">
 									<div className="col center s12">
@@ -120,6 +105,22 @@ class DetailPage extends Component{
 									</div>
 								</div>
 							</div>
+							{data.map_url ? 
+							<div className="card-action">
+								<div className="row">
+									<br/>
+									<div className="center col s12">
+										<a id="mapOpenButton" className="btn appointment-btn orange darken-3" onClick={this.handleMapClick}>See the event on the map! <i className="material-icons right">expand_more</i></a>
+										<a id="mapCloseButton" className="btn appointment-btn orange darken-3 hidden" onClick={this.handleMapClick}>Close the map. <i className="material-icons right">expand_less</i></a>
+									</div>
+									<br/>
+									<div id="mapDiv" className="col s12 hidden">
+										<iframe className="area-map" title="map" src={data.map_url} allowFullScreen></iframe>
+									</div>
+								</div> 
+							</div>
+							: null
+							}
 						</div>
 						<div className="card-image hide-on-med-and-down">
 							<img className="responsive-img page-main-img card-image-semi-round" src={data.main_img} alt="host promo"/>

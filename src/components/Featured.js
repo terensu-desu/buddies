@@ -9,7 +9,7 @@ class Featured extends Component{
 		this.support = props.displayData.support
 	}
 
-	compoentWillReceiveProps(nextProps) {
+	componentWillReceiveProps(nextProps) {
 		this.view = nextProps.displayData.view
 		this.requests = nextProps.displayData.requests
 		this.support = nextProps.displayData.support
@@ -62,7 +62,6 @@ class Featured extends Component{
 	}
 
 	render() {
-		console.log(this.view)
 		const category1 = ["すべて","交通","市役所","学校","病院","銀行・金融","子ども","趣味","生活相談","料理","食事","美容・ファッション","その他"];
 		const category2 = ["すべて","生活","文化","学業","お金","子育て","健康","職場","睡眠","その他"];
 		const category3 = ["すべて","ホームパーティ","居酒屋・バー","その他"];

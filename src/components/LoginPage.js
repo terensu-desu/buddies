@@ -36,6 +36,7 @@ export default withAuth(class LoginPage extends Component{
 	}
 
   render(){
+  	console.log(this.props)
   	if(this.state.authenticated === null) return null;
     return this.state.authenticated ?
 	    <Redirect to={{pathname:"/"}}/> :

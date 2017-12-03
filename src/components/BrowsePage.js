@@ -2,13 +2,17 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 export default class BrowsePage extends Component {
-	constructor() {
-		super()
+	constructor(props) {
+		super(props)
 		this.handlePreviewData = this.handlePreviewData.bind(this)
+		this.view = props.displayData.view
+	}
+
+	componentWillReceiveProps(nextProps) {
+		this.view = nextProps.displayData.view
 	}
 
 	handlePreviewData(subfilter) {
-		console.log(this.props)
 		let data = []
 		let info = this.props.displayData
 		if(subfilter === "buddies") {
@@ -57,61 +61,63 @@ export default class BrowsePage extends Component {
 		return dataMap
 	}
 
-
-
 	render() {
-		const category = ["すべて","交通","市役所","学校","病院","銀行・金融","子ども","趣味","生活相談",
+		/*const category = ["すべて","交通","市役所","学校","病院","銀行・金融","子ども","趣味","生活相談",
 											"料理","食事","美容・ファッション","生活","文化","学業","お金","子育て","健康",
-											"職場","睡眠","ホームパーティ","居酒屋・バー",];
+											"職場","睡眠","ホームパーティ","居酒屋・バー",];*/
 		return (
 			<div className="container">
-
 				<div className="row center no-margin-bot">
 					<div className="col s3">
-						<Link to="/" className="">ホーム</Link>
+						<Link to="/" className="">{this.view.home.home}</Link>
 					</div>
 					<div className="col s3">
-						<a href="#!" className="">おすすめ</a>
+						<a href="#!" className="">{this.view.home.recommended}</a>
 					</div>
 					<div className="col s3">
-						<Link to="/browse/requests" className="">みんなのリクエスト</Link>
+						<Link to="/browse/requests" className="">{this.view.home.requests}</Link>
 					</div>
 					<div className="col s3">
-						<Link to="/browse/support" className="">みんなのサポート</Link>
+						<Link to="/browse/support" className="">{this.view.home.support}</Link>
 					</div>
 				</div>
-
 				<div className="row">
 					<div className="col s2">
-						<h4>Filters</h4>
+						<h4>{this.view.home.filters}</h4>
 						<ul>
-							{category.map((item, i) => {
+							{this.view.categories.buddies.map((item, i) => {
+								return (<li key={i}><a href="#!">{item}</a></li>)
+							})}
+							<div className="divider"></div>
+							{this.view.categories.life.map((item, i) => {
+								return (<li key={i}><a href="#!">{item}</a></li>)
+							})}
+							<div className="divider"></div>
+							{this.view.categories.events.map((item, i) => {
 								return (<li key={i}><a href="#!">{item}</a></li>)
 							})}
 						</ul>
 					</div>
 					<div className="col s3">
-						<h4>Buddies</h4>
+						<h4>{this.view.home.buddies}</h4>
 						<ul>
 							{this.handlePreviewData("buddies")}
 						</ul>
 					</div>
 					<div className="col s3">
-						<h4>生活</h4>
+						<h4>{this.view.home.life}</h4>
 						<ul>
 							{this.handlePreviewData("life")}
 						</ul>
 					</div>
 					<div className="col s3">
-						<h4>エベント</h4>
+						<h4>{this.view.home.events}</h4>
 						<ul>
 							{this.handlePreviewData("events")}
 						</ul>
 					</div>
 				</div>
-
 			</div>
-
 		)
 	}
 }
