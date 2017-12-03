@@ -8,6 +8,12 @@ class FeaturedPage extends Component{
 		super(props)
 		this.data = store.retrieveData(props.lang)
 	}
+
+  componentWillReceiveProps(nextProps) {
+    console.log(this.nextProps)
+    this.data = store.retrieveData(nextProps.lang)
+  }
+
 	render() {
 		return (
 			<Featured displayData={this.data} />

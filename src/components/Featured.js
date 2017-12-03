@@ -9,6 +9,12 @@ class Featured extends Component{
 		this.support = props.displayData.support
 	}
 
+	compoentWillReceiveProps(nextProps) {
+		this.view = nextProps.displayData.view
+		this.requests = nextProps.displayData.requests
+		this.support = nextProps.displayData.support
+	}
+
 	handlePreviewData(filter) {
 		let data = []
 		if(filter === "requests") {
@@ -56,6 +62,7 @@ class Featured extends Component{
 	}
 
 	render() {
+		console.log(this.view)
 		const category1 = ["すべて","交通","市役所","学校","病院","銀行・金融","子ども","趣味","生活相談","料理","食事","美容・ファッション","その他"];
 		const category2 = ["すべて","生活","文化","学業","お金","子育て","健康","職場","睡眠","その他"];
 		const category3 = ["すべて","ホームパーティ","居酒屋・バー","その他"];
@@ -71,12 +78,12 @@ class Featured extends Component{
 						<div className="card-panel card-round">
 								<div className="row no-margin-top">
 									<div className="col s12">
-										<h4 className="no-margin-bot no-margin-top">みんなのリクエスト</h4>
+										<h4 className="no-margin-bot no-margin-top">{this.view.home.requests}</h4>
 									</div>
 								</div>
 								<div className="row no-margin-bot">
 									{this.handlePreviewData("requests")}
-									<Link to="/browse/requests" className="right btn orange darken-3">もっと</Link>
+									<Link to="/browse/requests" className="right btn orange darken-3">{this.view.home.more}</Link>
 								</div>
 						</div>
 					</div>
@@ -84,12 +91,12 @@ class Featured extends Component{
 						<div className="card-panel card-round">
 							<div className="row no-margin-top">
 								<div className="col s12">
-									<h4 className="no-margin-bot no-margin-top">みんなのサポート</h4>
+									<h4 className="no-margin-bot no-margin-top">{this.view.home.support}</h4>
 								</div>
 							</div>
 							<div className="row no-margin-bot">
 								{this.handlePreviewData("support")}
-								<Link to="/browse/support" className="right btn orange darken-3">もっと</Link>
+								<Link to="/browse/support" className="right btn orange darken-3">{this.view.home.more}</Link>
 							</div>
 						</div>
 					</div>
@@ -98,31 +105,31 @@ class Featured extends Component{
 					<div className="col s12">
 						<div className="card-panel card-round">
 							<div className="center">
-								<h4 className="flow-text">Buddiesは海外から来た人と現地のつなげwin-winを作るサービスです。</h4>
+								<h4 className="flow-text">{this.view.home.siteBlurb}</h4>
 								<div className="divider"></div>
-								<img className="responsive-img" src="https://i.imgur.com/4TCm4Ec.png" alt="service breakdown" />
+								<img className="responsive-img" src={this.view.home.siteBlurbPic} alt="service breakdown" />
 								<div className="divider"></div>
-								<h4 className="flow-text">安心してご利用していただくための取り組み</h4>
+								<h4 className="flow-text">{this.view.home.secureBlurb}</h4>
 								<div className="row">
 						      <div className="col s4">
 						      	<div className="center promo">
 							      	<i className="material-icons large vit-accent">rate_review</i>
-							      	<h5>レビュー評価</h5>
-							      	<p>府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。</p>
+							      	<h5>{this.view.home.secureDetailTitle1}</h5>
+							      	<p>{this.view.home.secureDetail1}</p>
 						      	</div>
 						      </div>
 						      <div className="col s4">
 						      	<div className="center promo">
 						      		<i className="material-icons large vit-accent">perm_identity</i>
-							      	<h5>ID認証</h5>
-							      	<p>府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。</p>
+							      	<h5>{this.view.home.secureDetailTitle2}</h5>
+							      	<p>{this.view.home.secureDetail2}</p>
 							      </div>
 						      </div>
 						      <div className="col s4">
 						      	<div className="center promo">
 							      	<i className="material-icons large vit-accent">remove_red_eye</i>
-							      	<h5>パトロール</h5>
-							      	<p>府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。</p>
+							      	<h5>{this.view.home.secureDetailTitle3}</h5>
+							      	<p>{this.view.home.secureDetail3}</p>
 						      	</div>
 						      </div>
 						    </div>

@@ -25,7 +25,7 @@ export default class BrowsePage extends Component {
 						<Link to={item.url}>
 							<div className="card-image">
 								<img className="card-image-round" src={item.img} alt="featured preview" />
-								<div className="close-text card-title featured-title">{item.title}</div>
+								<div className="close-text card-title featured-title truncate">{item.title}</div>
 							</div>
 							<div className="card-content">
 								<div className="row featured-row">
@@ -68,16 +68,16 @@ export default class BrowsePage extends Component {
 
 				<div className="row center no-margin-bot">
 					<div className="col s3">
-						<a href="#!" className="">ホーム</a>
+						<Link to="/" className="">ホーム</Link>
 					</div>
 					<div className="col s3">
 						<a href="#!" className="">おすすめ</a>
 					</div>
 					<div className="col s3">
-						<a href="#!" className="">みんなのリクエスト</a>
+						<Link to="/browse/requests" className="">みんなのリクエスト</Link>
 					</div>
 					<div className="col s3">
-						<a href="#!" className="">みんなのサポート</a>
+						<Link to="/browse/support" className="">みんなのサポート</Link>
 					</div>
 				</div>
 
