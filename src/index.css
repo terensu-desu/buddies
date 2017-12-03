@@ -16,6 +16,7 @@ span, .brand-logo, .accent-text {
 }
 
 .hidden {
+	/* necessary */
 	display: none;
 }
 
