@@ -67,20 +67,6 @@ export default class BrowsePage extends Component {
 											"職場","睡眠","ホームパーティ","居酒屋・バー",];*/
 		return (
 			<div className="container">
-				<div className="row center no-margin-bot">
-					<div className="col s3">
-						<Link to="/" className="">{this.view.home.home}</Link>
-					</div>
-					<div className="col s3">
-						<a href="#!" className="">{this.view.home.recommended}</a>
-					</div>
-					<div className="col s3">
-						<Link to="/browse/requests" className="">{this.view.home.requests}</Link>
-					</div>
-					<div className="col s3">
-						<Link to="/browse/support" className="">{this.view.home.support}</Link>
-					</div>
-				</div>
 				<div className="row">
 					<div className="col s2">
 						<h4>{this.view.home.filters}</h4>
