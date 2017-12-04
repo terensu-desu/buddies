@@ -17,7 +17,7 @@ span, .brand-logo, .accent-text {
 
 .hidden {
 	/* necessary */
-	display: none;
+	display: none !important;
 }
 
 .display-linebreak {
@@ -41,15 +41,15 @@ span, .brand-logo, .accent-text {
 }
 
 .card-round {
-	border-radius: 15px !important
+	border-radius: 10px !important
 }
 
 .card-image-round {
-	border-radius: 15px 15px 0 0 !important
+	border-radius: 10px 10px 0 0 !important
 }
 
 .card-image-semi-round {
-	border-radius: 0 15px 0 0 !important
+	border-radius: 0 10px 0 0 !important
 }
 
 /* Styling for Navbar */
@@ -95,10 +95,14 @@ span, .brand-logo, .accent-text {
 	font-size: 1.3rem
 }
 
-/* Styling for SearchBar */
+/* Styling for Search */
 /* banner patterned img from patterncooler.com */
 .search-margin-push {
 	margin-top: 12px
+}
+
+.top-margin-20 {
+	margin-top: 20px;
 }
 
 /* Styling for Featured */
