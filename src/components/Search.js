@@ -1,9 +1,34 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import store from '../store'
 
 class Search extends Component{
+	constructor(props) {
+		super(props)
+		this.view = store.retrieveLanguageView(props.lang)
+	}
+
+	componentWillReceiveProps(nextProps) {
+		this.view = store.retrieveLanguageView(nextProps.lang)
+	}
+
 	render() {
 		return (
 			<div className="container">
+				<div className="row center no-margin-bot top-margin-20">
+					<div className="col s3">
+						<Link to="/" className="">{this.view.home.home}</Link>
+					</div>
+					<div className="col s3">
+						<a href="#!" className="">{this.view.home.recommended}</a>
+					</div>
+					<div className="col s3">
+						<Link to="/browse/requests" className="">{this.view.home.requests}</Link>
+					</div>
+					<div className="col s3">
+						<Link to="/browse/support" className="">{this.view.home.support}</Link>
+					</div>
+				</div>
 				<div className="row no-margin-bot">
 					<div className="col s12">
 						<div className="card-panel card-round">
