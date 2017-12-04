@@ -27,7 +27,7 @@ export default class App extends Component {
       <Router>
         <div>
           <Navbar lang={this.state.language} changeLanguage={this.changeLanguage} />
-          <Search />
+          <Search lang={this.state.language} />
           <Route exact path="/" render={() => <FeaturedPage lang={this.state.language} />} />
           <Route path="/browse/:filter" render={({match}) => <BrowsePageFilter match={match} lang={this.state.language} />} />
           <Route path="/details/:section/:page/:id" render={({match}) => <DetailPageFilter match={match} lang={this.state.language} />} />
