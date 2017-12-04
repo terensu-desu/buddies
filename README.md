@@ -8,8 +8,6 @@ Wants 100 customers by the end of the year.
   - Reach out to social media and blogs.
   - QR code creation with a link to site.
 
-Send Anqi a picture of yourself
-
 ## Priorities
 - Login and register. OAuth2. - High
   - 11/19, added functionality for logins using Okta account info
@@ -17,6 +15,9 @@ Send Anqi a picture of yourself
   - Next will be to get routing working correctly to show secure data.
   - Eventually will try to get OAuth2 social logins included.
 - Browse page, have filter buttons (include gender option) - High
+  - Add filters
+  - Add item scrolling
+- Search bar functionality. - High
 - Set up language filter to use local browser storage to save language preference. - Medium; requires language packs ready
 - Think about where to add interview video
 - Recommended page can show up after clicking on "motto" which would take you to the browse page like Anytime's page
@@ -31,6 +32,7 @@ Send Anqi a picture of yourself
   - Main page redesign from 11/13 request, using cards, larger and fewer preview items
 
 ## Things to research
+  - Set up a pre-registration mailing list to let users know when the site goes Beta or fully launch.
   - Domain provider (1 domain name or 3). I think a .com would be a good start to save money.
   - Security
     - How to get ID verification for hosts. Airbnb does by Facebook profile, phone number, email address, or government ID.
