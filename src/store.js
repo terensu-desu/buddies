@@ -1090,10 +1090,10 @@ class store extends EventEmitter {
 				view: {
 					navbar: {
 						sublogo: "仲間と出会い、つながる、支え合う",
-						about: "約",
+						about: "buddiesnitsuite",
 						logIn: "ログイン",
 						logOut: "ログアウト",
-						signUp: "サインアップ",
+						signUp: "新規登録",
 					},
 					home:  {
 						home: "ホーム",
@@ -1102,7 +1102,7 @@ class store extends EventEmitter {
 						requests: "みんなのリクエスト",
 						support: "みんなのサポート",
 						buddies: "Buddies",
-						events: "エベント",
+						events: "イベント",
 						life: "生活",
 						siteBlurb: "Buddiesは海外から来た人と現地のつなげwin-winを作るサービスです。",
 						siteBlurbPic: "https://i.imgur.com/4TCm4Ec.png",
@@ -1110,9 +1110,9 @@ class store extends EventEmitter {
 						secureDetailTitle1: "レビュー評価",
 						secureDetailTitle2: "ID認証",
 						secureDetailTitle3: "パトロール",
-						secureDetail1: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。",
-						secureDetail2: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。",
-						secureDetail3: "府ば応督ぱ生味おほその面事6針ツトロシ支話検ニシ慢生セホニ門現処75句搭監48購伐唄づめ。",
+						secureDetail1: "サービスが完了した後、利用者と提供者双方がお互いにレビューする制度を設けています。5 段階評価制度を導入しております。評価とコメントがプロフィールに表示されるため、サービスを利用する前にそれぞれの評価を確認できます。",
+						secureDetail2: "本人確認書（パスポート、運転免許証など）を提出していただき、ID認証をさせていただいています。任意で電話確認も実施しており、認証マークをつけております。ユーザーの信頼度を確認できるようになっております。",
+						secureDetail3: "ユーザー同士での取引内容、メッセージ、サービスに不適切なものがないかBuddies事務局のカスタマーサポートがパトロールを行っております。万が一、トラブルや不適切な取引があった場合は、こちらで適当な処置をさせていただいております。",
 						more: "もっと"
 					},
 					categories: {
