@@ -6,7 +6,8 @@ class DetailPage extends Component{
 		this.mapVisible = false
 		this.handleMapClick = this.handleMapClick.bind(this)
 	}
-	handleMapClick() {
+	handleMapClick(e) {
+		e.preventDefault()
 		const mapStatus = this.mapVisible
 		if(mapStatus === false) {
 			document.getElementById("mapOpenButton").classList.add("hidden")
@@ -18,6 +19,22 @@ class DetailPage extends Component{
 			document.getElementById("mapDiv").classList.add("hidden")
 		}
 		this.mapVisible = !mapStatus
+	}
+
+	handlePicClick(pic) {
+		if(pic === "pic1") {
+			document.getElementById("pic1").classList.remove("hidden")
+			document.getElementById("pic2").classList.add("hidden")
+			document.getElementById("pic3").classList.add("hidden")
+		}else if(pic === "pic2") {
+			document.getElementById("pic2").classList.remove("hidden")
+			document.getElementById("pic1").classList.add("hidden")
+			document.getElementById("pic3").classList.add("hidden")
+		}else if(pic === "pic3") {
+			document.getElementById("pic3").classList.remove("hidden")
+			document.getElementById("pic2").classList.add("hidden")
+			document.getElementById("pic1").classList.add("hidden")
+		}
 	}
 
 	render() {
@@ -123,17 +140,19 @@ class DetailPage extends Component{
 							}
 						</div>
 						<div className="card-image hide-on-med-and-down">
-							<img className="responsive-img page-main-img card-image-semi-round" src={data.main_img} alt="host promo"/>
+							<img id="pic1" className="responsive-img page-main-img card-image-semi-round" src={data.main_img} alt="host promo"/>
+							<img id="pic2" className="hidden responsive-img page-main-img card-image-semi-round" src={data.sec_img} alt="host promo"/>
+							<img id="pic3" className="hidden responsive-img page-main-img card-image-semi-round" src={data.thr_img} alt="host promo"/>
 							<div className="container thumbnail-container close-text">
 								<div className="row center">
 									<div className="col s4">
-										<img className="thumbnail hoverable" src={data.main_img} alt="host promo"/>
+										<img onClick={()=>this.handlePicClick("pic1")} className="thumbnail hoverable" src={data.main_img} alt="host promo"/>
 									</div>
 									<div className="col s4">
-										<img className="thumbnail hoverable" src={data.sec_img} alt="host promo"/>
+										<img onClick={()=>this.handlePicClick("pic2")} className="thumbnail hoverable" src={data.sec_img} alt="host promo"/>
 									</div>
 									<div className="col s4">
-										<img className="thumbnail hoverable" src={data.thr_img} alt="host promo"/>
+										<img onClick={()=>this.handlePicClick("pic3")} className="thumbnail hoverable" src={data.thr_img} alt="host promo"/>
 									</div>
 								</div>
 							</div>
