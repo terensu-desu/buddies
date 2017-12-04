@@ -1,6 +1,6 @@
 ## Notes for the overall project
-Goal to have the demo version of the site finished by 11/28
-Launch on site on domain by 12/1!
+Goal to have the demo version of the site finished by 12/28
+Launch on site on domain by 1/1!
 
 Start running the website by December 1st!
 Wants 100 customers by the end of the year.
@@ -21,7 +21,6 @@ Wants 100 customers by the end of the year.
 - Set up language filter to use local browser storage to save language preference. - Medium; requires language packs ready
 - Think about where to add interview video
 - Recommended page can show up after clicking on "motto" which would take you to the browse page like Anytime's page
-- Browse page is split into two parents, Requests and Support. 
 
 ## Completion list
   - Clean up individual pages structure. - High. Finished - 11/23
@@ -30,6 +29,7 @@ Wants 100 customers by the end of the year.
     - Ask for clarification and add Anqi's requests
     - Add autocomplete when Materialize drops jQuery dependency
   - Main page redesign from 11/13 request, using cards, larger and fewer preview items
+  - Browse page is split into two parents, Requests and Support. - Finished 11/29-ish
 
 ## Things to research
   - Set up a pre-registration mailing list to let users know when the site goes Beta or fully launch.
