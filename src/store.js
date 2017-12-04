@@ -549,7 +549,7 @@ class store extends EventEmitter {
 					home:  {
 						home: "Home",
 						recommended: "Recommended",
-						filters: "Filters",
+						filters: "Categories",
 						requests: "Featured Requests",
 						support: "Featured Support",
 						buddies: "Buddies",
@@ -1090,7 +1090,7 @@ class store extends EventEmitter {
 				view: {
 					navbar: {
 						sublogo: "仲間と出会い、つながる、支え合う",
-						about: "buddiesnitsuite",
+						about: "Buddiesについて",
 						logIn: "ログイン",
 						logOut: "ログアウト",
 						signUp: "新規登録",
@@ -1098,7 +1098,7 @@ class store extends EventEmitter {
 					home:  {
 						home: "ホーム",
 						recommended: "おすすめ",
-						filters: "フィルター",
+						filters: "カテゴリー",
 						requests: "みんなのリクエスト",
 						support: "みんなのサポート",
 						buddies: "Buddies",
