@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import PreRegisterForm from "./PreRegisterForm";
 
 class Featured extends Component{
 	constructor(props) {
@@ -60,7 +61,10 @@ class Featured extends Component{
 		})
 		return dataMap
 	}
-
+/* 
+							<h4>Pre-register for our service and receive news and an invite to our launch!</h4>
+							<a className="btn orange darken-3" href="http://eepurl.com/dfLNgv">Click to pre-register</a>
+*/
 	render() {
 		const category1 = ["すべて","交通","市役所","学校","病院","銀行・金融","子ども","趣味","生活相談","料理","食事","美容・ファッション","その他"];
 		const category2 = ["すべて","生活","文化","学業","お金","子育て","健康","職場","睡眠","その他"];
@@ -72,6 +76,14 @@ class Featured extends Component{
 											"徳島県","東京都","鳥取県","富山県","和歌山県","山形県","山口県	","山梨県",];
 		return (
 			<div className="container">
+				<div className="row">
+					<div className="col s8 offset-s2">
+						<div id="preregister" className="card-panel card-round">
+							<PreRegisterForm />
+				<a className="btn orange darken-3" href="http://eepurl.com/dfLNgv">External Registration Page</a>
+						</div>
+					</div>
+				</div>
 				<div className="row">
 					<div className="col m12 l12 xl6">
 						<div className="card-panel card-round">
