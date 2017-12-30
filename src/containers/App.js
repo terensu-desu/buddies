@@ -1,25 +1,25 @@
-import React, { Component } from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom' //can use HashRouter or BrowserRouter if running into trouble on builds
-import Navbar from '../components/Navbar'
-import FeaturedPage from '../containers/FeaturedPage'
-import DetailPageFilter from '../containers/DetailPageFilter'
-import Search from '../components/Search'
-import BrowsePageFilter from '../containers/BrowsePageFilter'
+import React, { Component } from 'react';
+import { HashRouter as Router, Route } from 'react-router-dom'; //can use HashRouter or BrowserRouter if running into trouble on builds
+import Navbar from '../components/Navbar';
+import FeaturedPage from '../containers/FeaturedPage';
+import DetailPageFilter from '../containers/DetailPageFilter';
+import Search from '../components/Search';
+import BrowsePageFilter from '../containers/BrowsePageFilter';
 
 export default class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       language: "japanese",
       authenticated: null
-    }
-    this.changeLanguage = this.changeLanguage.bind(this)
+    };
+    this.changeLanguage = this.changeLanguage.bind(this);
   }
 
   changeLanguage(newLanguage) {
     this.setState({
       language: newLanguage
-    })
+    });
   }
 
   render() {
@@ -33,8 +33,8 @@ export default class App extends Component {
           <Route path="/details/:section/:page/:id" render={({match}) => <DetailPageFilter match={match} lang={this.state.language} />} />
         </div>
       </Router>
-    )
-  }
+    );
+  };
 }
 
 /* Keeping Okta things commented out until PR#51 goes npm.

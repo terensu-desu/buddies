@@ -1,42 +1,42 @@
-import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
-import OktaSignInWidget from './OktaSignInWidget'
-import { withAuth } from '@okta/okta-react'
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import OktaSignInWidget from './OktaSignInWidget';
+import { withAuth } from '@okta/okta-react';
 
 export default withAuth(class LoginPage extends Component{
 	constructor(props) {
-		super(props)
-		this.onSuccess = this.onSuccess.bind(this)
-		this.onError = this.onError.bind(this)
+		super(props);
+		this.onSuccess = this.onSuccess.bind(this);
+		this.onError = this.onError.bind(this);
 		this.state = {
 			authenticated: null
-		}
-		this.checkAuthentication()
+		};
+		this.checkAuthentication();
 	}
 
 	async checkAuthentication() {
-		const authenticated = await this.props.auth.isAuthenticated()
+		const authenticated = await this.props.auth.isAuthenticated();
 		if(authenticated !== this.state.authenticated) {
-			this.setState({ authenticated })
+			this.setState({ authenticated });
 		}
-	}
+	};
 
 	componentDidUpdate() {
-		this.checkAuthentication()
+		this.checkAuthentication();
 	}
 
 	onSuccess(res) {
 		return this.props.auth.redirect({
 			sessionToken: res.session.token
-		})
+		});
 	}
 
 	onError(err) {
-		console.log('error logging in', err)
+		console.log('error logging in', err);
 	}
 
   render(){
-  	console.log(this.props)
+  	console.log(this.props);
   	if(this.state.authenticated === null) return null;
     return this.state.authenticated ?
 	    <Redirect to={{pathname:"/"}}/> :
