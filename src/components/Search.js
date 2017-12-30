@@ -15,18 +15,20 @@ class Search extends Component{
 	render() {
 		return (
 			<div className="container">
-				<div className="row center no-margin-bot top-margin-20">
-					<div className="col s3">
-						<Link to="/" className="">{this.view.home.home}</Link>
-					</div>
-					<div className="col s3">
-						<a href="#!" className="">{this.view.home.recommended}</a>
-					</div>
-					<div className="col s3">
-						<Link to="/browse/requests" className="">{this.view.home.requests}</Link>
-					</div>
-					<div className="col s3">
-						<Link to="/browse/support" className="">{this.view.home.support}</Link>
+				<div className="card-panel card-round minimal-padding">
+					<div className="row center no-margin-bot">
+						<div className="col s3">
+							<Link to="/" className="">{this.view.home.home}</Link>
+						</div>
+						<div className="col s3">
+							<a href="#!" className="">{this.view.home.recommended}</a>
+						</div>
+						<div className="col s3">
+							<Link to="/browse/requests" className="">{this.view.home.requests}</Link>
+						</div>
+						<div className="col s3">
+							<Link to="/browse/support" className="">{this.view.home.support}</Link>
+						</div>
 					</div>
 				</div>
 				<div className="row no-margin-bot">

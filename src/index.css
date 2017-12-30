@@ -3,7 +3,7 @@ body {
 	font-family: 'Didact Gothic', 'Meiryo UI'; 
   font-weight: normal; 
   font-style: normal; 
-	background-color: white;
+	background-color: #fafafa;
 }
 
 /* Styling for general */
@@ -101,8 +101,9 @@ span, .brand-logo, .accent-text {
 	margin-top: 12px
 }
 
-.top-margin-20 {
-	margin-top: 20px;
+.minimal-padding {
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
 }
 
 /* Styling for Featured */

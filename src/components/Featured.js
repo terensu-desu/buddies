@@ -77,14 +77,6 @@ class Featured extends Component{
 		return (
 			<div className="container">
 				<div className="row">
-					<div className="col s8 offset-s2">
-						<div id="preregister" className="card-panel card-round">
-							<PreRegisterForm />
-				<a className="btn orange darken-3" href="http://eepurl.com/dfLNgv">External Registration Page</a>
-						</div>
-					</div>
-				</div>
-				<div className="row">
 					<div className="col m12 l12 xl6">
 						<div className="card-panel card-round">
 								<div className="row no-margin-top">
@@ -146,6 +138,11 @@ class Featured extends Component{
 						    </div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col s8 offset-s2">
+						<PreRegisterForm />
 					</div>
 				</div>
 				<div className="row no-margin-bot">
