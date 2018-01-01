@@ -4,17 +4,29 @@ import store from '../store'
 
 class Navbar extends Component{
 	constructor(props) {
-		super(props)
-		this.view = store.retrieveLanguageView(props.lang)
+		super(props);
+		this.view = store.retrieveLanguageView(this.props.lang);
+		this.authenticated = this.props.authenticated;
 	}
 
 	handleClick(e, val) {
-		e.preventDefault()
-		this.props.changeLanguage(val)
+		e.preventDefault();
+		this.props.changeLanguage(val);
 	}
 
-	componentWillReceiveProps(nextProps)	{
-		this.view = store.retrieveLanguageView(nextProps.lang)
+	handleUserLinks() {
+		if(this.authenticated) {
+			return <Link to={window.location.pathname} className="accent-text" onClick={() => this.props.logout()}>{this.view.navbar.logOut}</Link>;
+		}else {
+			return (
+				<Link to="/login" className="accent-text">{this.view.navbar.logIn}</Link>
+			);
+		}
+	}
+
+	componentWillReceiveProps(nextProps) {
+		this.view = store.retrieveLanguageView(nextProps.lang);
+		this.authenticated = nextProps.authenticated;
 	}
 
 	render() {
@@ -26,21 +38,15 @@ class Navbar extends Component{
 					<a href="#!" data-activates="sidebar-nav" className="button-collapse accent-text"><i className="material-icons">menu</i></a>
 					<ul id="nav-mobile" className="right hide-on-med-and-down show-on-large">
 						<li><a className="accent-text" href="#!">{this.view.navbar.about}</a></li>
-						{this.props.authentication
-							? <li><a className="accent-text" href="#!">{this.view.navbar.logOut}</a></li> 
-							: <li><Link to="/login" className="accent-text">{this.view.navbar.logIn}</Link></li>
-						}
-						<li><a className="accent-text" href="#!">{this.view.navbar.signUp}</a></li>
-						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown1" data-beloworigin="true"><i className="material-icons right">language</i></a></li>
+						<li>{this.handleUserLinks()}</li>
+						{this.authenticated ? null : <li><a className="accent-text" href="#!">{this.view.navbar.signUp}</a></li>}
+						<li><a id="drop1" className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown1" data-beloworigin="true"><i className="material-icons right">language</i></a></li>
 					</ul>
 					<ul className="side-nav center" id="sidebar-nav">
 						<li><a className="accent-text" href="#!">{this.view.navbar.about}</a></li>
-						{this.props.authentication
-							? <li><a className="accent-text" href="#!">{this.view.navbar.logOut}</a></li>
-							: <li><Link to="/login" className="accent-text">{this.view.navbar.logIn}</Link></li>
-						}
-						<li><a className="accent-text" href="#!">{this.view.navbar.signUp}</a></li>
-						<li><a className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown2" data-beloworigin="true"><span><i className="side-nav-icon material-icons left">language</i></span></a></li>
+						<li>{this.handleUserLinks()}</li>
+						{this.authenticated ? null : <li><a className="accent-text" href="#!">{this.view.navbar.signUp}</a></li>}
+						<li><a id="drop2" className="dropdown-button accent-text" href="#!" data-activates="lang-dropdown2" data-beloworigin="true"><span><i className="side-nav-icon material-icons left">language</i></span></a></li>
 					</ul>
 					<ul id="lang-dropdown1" className="dropdown-content">
 						<li><a onClick={(e) => this.handleClick(e,"japanese")} className="accent-text center">日本語</a></li>
@@ -54,8 +60,17 @@ class Navbar extends Component{
 					</ul>
 				</div>
 			</nav>
-		)
+		);
 	}
 }
 
-export default Navbar
+export default Navbar;
+
+/*
+
+<li>{this.authentication 
+		? <Link to={window.location.pathname} className="accent-text" onClick={() => this.props.logout()}>{this.view.navbar.logOut}</Link>
+		: <Link to="/login" className="accent-text">{this.view.navbar.logIn}</Link>}
+</li>
+
+*/
