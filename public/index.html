@@ -45,7 +45,11 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $(".button-collapse").sideNav();
-        $(".dropdown-button").dropdown({
+        $("#drop1").dropdown({
+          belowOrigin: true,
+          stopPropagation: true
+        });
+        $("#drop2").dropdown({
           belowOrigin: true,
           stopPropagation: true
         });
