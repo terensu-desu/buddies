@@ -1,17 +1,13 @@
 ## Notes for the overall project
-Goal to have the demo version of the site finished by 12/28
-Launch on site on domain by 1/1!
-
-Start running the website by December 1st!
-Wants 100 customers by the end of the year.
-  - Reach out to friends and people about hopping on and trying out the service.
-  - Reach out to social media and blogs.
-  - QR code creation with a link to site.
+  - The master branch is for structural display purposes only at the moment. Due to the way Okta's authentication service works, we have to switch to BrowserRouter to have that feature working. Unfortunately, BrowserRouter doesn't work with GitHub Pages.
+  - To see the code of the authentication enable build, visit the okta-run branch. A temporary live build is available on buddysjapan.com.
 
 ## Priorities
 - Login and register. OAuth2. - High
   - 11/19, added functionality for logins using Okta account info
   - 11/21, completed login function using Okta account info.
+  - 12/29, discovered HashRouter does not work with Okta - switched to BrowserRouter, solved spinning login process
+  - 1/3, solved Okta authentication structure issue. App.js now passes Security and related functions, Main.js handles app state and authentication state and props.
   - Next will be to get routing working correctly to show secure data.
   - Eventually will try to get OAuth2 social logins included.
 - Browse page, have filter buttons (include gender option) - High
