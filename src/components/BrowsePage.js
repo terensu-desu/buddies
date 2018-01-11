@@ -1,26 +1,26 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class BrowsePage extends Component {
 	constructor(props) {
-		super(props)
-		this.handlePreviewData = this.handlePreviewData.bind(this)
-		this.view = props.displayData.view
+		super(props);
+		this.handlePreviewData = this.handlePreviewData.bind(this);
+		this.view = props.displayData.view;
 	}
 
 	componentWillReceiveProps(nextProps) {
-		this.view = nextProps.displayData.view
+		this.view = nextProps.displayData.view;
 	}
 
 	handlePreviewData(subfilter) {
-		let data = []
-		let info = this.props.displayData
+		let data = [];
+		let info = this.props.displayData;
 		if(subfilter === "buddies") {
-			data = info[this.props.filter].buddies.slice(0,4)
+			data = info[this.props.filter].buddies.slice(0,4);
 		}else if(subfilter === "life") {
-			data = info[this.props.filter].life.slice(0,4)
+			data = info[this.props.filter].life.slice(0,4);
 		}else if(subfilter === "events") {
-			data = info[this.props.filter].events.slice(0,4)
+			data = info[this.props.filter].events.slice(0,4);
 		}
 		const dataMap = data.map((item,i) => {
 			return (
@@ -56,9 +56,9 @@ export default class BrowsePage extends Component {
 						</Link>
 					</div>
 				</li>
-			)
-		})
-		return dataMap
+			);
+		});
+		return dataMap;
 	}
 
 	render() {
@@ -104,6 +104,6 @@ export default class BrowsePage extends Component {
 					</div>
 				</div>
 			</div>
-		)
+		);
 	}
 }

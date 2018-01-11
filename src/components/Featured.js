@@ -2,26 +2,26 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PreRegisterForm from "./PreRegisterForm";
 
-class Featured extends Component{
+export default class Featured extends Component{
 	constructor(props) {
-		super(props)
-		this.view = props.displayData.view
-		this.requests = props.displayData.requests
-		this.support = props.displayData.support
+		super(props);
+		this.view = props.displayData.view;
+		this.requests = props.displayData.requests;
+		this.support = props.displayData.support;
 	}
 
 	componentWillReceiveProps(nextProps) {
-		this.view = nextProps.displayData.view
-		this.requests = nextProps.displayData.requests
-		this.support = nextProps.displayData.support
+		this.view = nextProps.displayData.view;
+		this.requests = nextProps.displayData.requests;
+		this.support = nextProps.displayData.support;
 	}
 
 	handlePreviewData(filter) {
-		let data = []
+		let data = [];
 		if(filter === "requests") {
-			data = this.requests.buddies.slice(0,4)
+			data = this.requests.buddies.slice(0,4);
 		}else if(filter === "support") {
-			data = this.support.buddies.slice(0,4)
+			data = this.support.buddies.slice(0,4);
 		}
 		const dataMap = data.map((item,i) => {
 			return (
@@ -57,9 +57,9 @@ class Featured extends Component{
 						</Link>
 					</div>
 				</div>
-			)
-		})
-		return dataMap
+			);
+		});
+		return dataMap;
 	}
 /* 
 							<h4>Pre-register for our service and receive news and an invite to our launch!</h4>
@@ -288,8 +288,6 @@ class Featured extends Component{
 					</div>
 				</div>
 			</div>
-		)
+		);
 	}
 }
-
-export default Featured

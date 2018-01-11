@@ -36,11 +36,11 @@ export default class PreRegisterForm extends Component{
 	render() {
 		const style1 = {
 			display: 'none'
-		}
+		};
 		const style2 = {
 			position: "absolute",
 			left: "-5000px"
-		}
+		};
 		return(
 			<div className="card-panel card-round">
 				<div id="mc_embed_signup">
@@ -75,6 +75,6 @@ export default class PreRegisterForm extends Component{
 				</div>
 				<a className="btn orange darken-3" href="http://eepurl.com/dfLNgv">External Registration Page</a>
 			</div>
-		)
+		);
 	}	
 }

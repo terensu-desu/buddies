@@ -1,19 +1,21 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import store from '../store'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import store from '../store';
 
-class Navbar extends Component{
+export default class Navbar extends Component{
 	constructor(props) {
 		super(props);
 		this.view = store.retrieveLanguageView(this.props.lang);
 		this.authenticated = this.props.authenticated;
 	}
 
+	// handleClick acts to receive the value (language clicked) and send that to the changeLanguage prop which changes the state, re-rendering any changes.
 	handleClick(e, val) {
 		e.preventDefault();
 		this.props.changeLanguage(val);
 	}
 
+	// This is required for displaying the correct Navbar links depending on whether the user is logged in or not.
 	handleUserLinks() {
 		if(this.authenticated) {
 			return <Link to={window.location.pathname} className="accent-text" onClick={() => this.props.logout()}>{this.view.navbar.logOut}</Link>;
@@ -64,13 +66,5 @@ class Navbar extends Component{
 	}
 }
 
-export default Navbar;
-
-/*
-
-<li>{this.authentication 
-		? <Link to={window.location.pathname} className="accent-text" onClick={() => this.props.logout()}>{this.view.navbar.logOut}</Link>
-		: <Link to="/login" className="accent-text">{this.view.navbar.logIn}</Link>}
-</li>
-
-*/
+// Within div.nav-wrapper you'll see near two pairs of duplicate ul elements, this is for MaterializeCSS' regular "top" navigation bar and the small screen
+// sidebar navigation. Depending on the screen/window size of the user, it will show one or the other and handle the correct javascript and HTML.

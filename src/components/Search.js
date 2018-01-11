@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import store from '../store'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import store from '../store';
 
-class Search extends Component{
+export default class Search extends Component{
 	constructor(props) {
-		super(props)
-		this.view = store.retrieveLanguageView(props.lang)
+		super(props);
+		this.view = store.retrieveLanguageView(props.lang);
 	}
 
 	componentWillReceiveProps(nextProps) {
-		this.view = store.retrieveLanguageView(nextProps.lang)
+		this.view = store.retrieveLanguageView(nextProps.lang);
 	}
 
 	render() {
@@ -51,8 +51,6 @@ class Search extends Component{
 					</div>
 				</div>
 			</div>
-		)
+		);
 	}
 }
-
-export default Search
