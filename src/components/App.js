@@ -16,7 +16,7 @@ function onAuthRequired({history}) {
 export default class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Security issuer="https://dev-345698.oktapreview.com/oauth2/default"
                   client_id="0oacxjbp9y3dH50cI0h7"
                   redirect_uri={window.location.origin + '/implicit/callback'}
