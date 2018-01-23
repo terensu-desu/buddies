@@ -44,36 +44,30 @@ export default class PreRegisterForm extends Component{
 		return(
 			<div className="card-panel card-round">
 				<div id="mc_embed_signup">
-					<form action="https://github.us17.list-manage.com/subscribe/post?u=c738b2ce292af6535fabc6a0e&amp;id=819c7b7844" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
-				    <div id="mc_embed_signup_scroll">
-							<h2>サービスのために事前登録！ ニュースとサービスが生中継されると連絡があります。</h2>
-							<div className="indicates-required"><span className="asterisk">*</span> 必要があることを示す</div>
-							<div className="mc-field-group">
-								<label htmlFor="mce-EMAIL">電子メールアドレス  <span className="asterisk">*</span></label>
-								<input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL"/>
-							</div>
-							<div className="mc-field-group">
-								<label htmlFor="mce-FNAME">ファーストネーム  <span className="asterisk">*</span></label>
-								<input type="text" value="" name="FNAME" className="required" id="mce-FNAME" />
-							</div>
-							<div className="mc-field-group">
-								<label htmlFor="mce-LNAME">苗字  <span className="asterisk">*</span></label>
-								<input type="text" value="" name="LNAME" className="required" id="mce-LNAME"/>
-							</div>
-							<div id="mce-responses" className="clear">
-								<div className="response" id="mce-error-response" style={style1}></div>
-								<div className="response" id="mce-success-response" style={style1}></div>
-							</div>
-					    <div style={style2} aria-hidden="true">
-					    	<input type="text" name="b_c738b2ce292af6535fabc6a0e_819c7b7844" tabIndex="-1" value="" />
+					<form action="https://github.us17.list-manage.com/subscribe/post?u=c738b2ce292af6535fabc6a0e&amp;id=819c7b7844" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" noValidate>
+					    <div id="mc_embed_signup_scroll">
+						<h2>事前登録開始！登録するとサービス開始が通知されます！</h2>
+					<div class="indicates-required"><span class="asterisk">*</span> 必須</div>
+					<div class="mc-field-group">
+						<label for="mce-NAME">お名前  <span class="asterisk">*</span>
+					</label>
+						<input type="text" value="" name="NAME" class="required" id="mce-NAME" />
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">メールアドレス  <span class="asterisk">*</span>
+					</label>
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+					</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style={style1}></div>
+							<div class="response" id="mce-success-response" style={style1}></div>
+						</div>
+					    <div style={style2} aria-hidden="true"><input type="text" name="b_c738b2ce292af6535fabc6a0e_819c7b7844" tabIndex="-1" value="" /></div>
+					    <div class="clear"><input type="submit" value="登録する" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
 					    </div>
-					    <div className="clear">
-					    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" />
-					    </div>
-				    </div>
 					</form>
 				</div>
-				<a className="btn orange darken-3" href="http://eepurl.com/dfLNgv">External Registration Page</a>
+				<a className="btn orange darken-3" href="http://eepurl.com/dfLNgv">外部リンクで登録する</a>
 			</div>
 		);
 	}	

@@ -8,6 +8,7 @@ import Search from '../components/Search';
 import FeaturedPage from './FeaturedPage';
 import DetailPageFilter from './DetailPageFilter';
 import BrowsePageFilter from './BrowsePageFilter';
+import Recommended from '../components/Recommended';
 import LoginPage from '../components/LoginPage';
 import Protected from '../components/Protected';
 
@@ -65,6 +66,7 @@ export default withAuth(class Main extends Component{
 				<Route exact path="/" render={() => <FeaturedPage lang={this.state.language} />} />
         <Route path="/browse/:filter" render={({match}) => <BrowsePageFilter match={match} lang={this.state.language} />} />
         <Route path="/details/:section/:page/:id" render={({match}) => <DetailPageFilter match={match} lang={this.state.language} />} />
+        <Route path="/recommended" component={Recommended} />
         <Route path="/login" render={() => <LoginPage baseUrl="https://dev-345698.oktapreview.com" authenticated={this.state.authenticated} onSuccess={this.onSuccess} onError={this.onError} />} />
         <Route path="/implicit/callback" component={ImplicitCallback} />
         <SecureRoute path="/protected" component={Protected} />
@@ -72,28 +74,3 @@ export default withAuth(class Main extends Component{
 		)
 	}
 });
-
-
-/*
-
-render() {
-	return (
-		<Router>
-			<Security issuer="https://dev-345698.oktapreview.com/oauth2/default"
-                client_id="0oacxjbp9y3dH50cI0h7"
-                redirect_uri={window.location.origin + '/implicit/callback'}
-                onAuthRequired={onAuthRequired} >
-        <Navbar lang={this.props.language} changeLanguage={this.changeLanguage} />
-        <Search lang={this.props.language} />
-				<Route exact path="/" render={() => <FeaturedPage lang={this.props.language} />} />
-        <Route path="/browse/:filter" render={({match}) => <BrowsePageFilter match={match} lang={this.props.language} />} />
-        <Route path="/details/:section/:page/:id" render={({match}) => <DetailPageFilter match={match} lang={this.props.language} />} />
-        <Route path="/login" render={() => <LoginPage baseUrl="https://dev-345698.oktapreview.com" />} />
-        <Route path="/implicit/callback" component={ImplicitCallback} />
-        <SecureRoute path="/protected" component={Protected} />
-			</Security>
-		</Router>
-	)
-}
-
-*/

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'; 
-// Can use HashRouter or BrowserRouter if running into trouble on builds
-// Use HashRouter over BrowserRouter for GitHub Pages but doesn't work with Okta
-// Use BrowserRouter for other builds, due to Okta compatibility (also cleaner).
+// Use BrowserRouter for the HTML5 support and also due to Okta compatibility.
 import { Security } from '@okta/okta-react';
 
 import Main from '../containers/Main';
